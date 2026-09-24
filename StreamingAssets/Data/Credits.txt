@@ -1,0 +1,17 @@
+KING 4 A DAY
+
+Ideazione e game design
+Stefano Maccarinelli
+Stelex Software
+
+Font principale
+Minepixel, fornito dall’autore
+
+Font di supporto
+DejaVu Sans Mono (licenza inclusa)
+
+Progetto Unity e asset procedurali
+Realizzati per questo progetto
+
+Baseline di design
+GDD 21.09.2026c
