@@ -745,3 +745,14 @@ pause.exit.no,"No, continua il gioco!"
 gameover.title,Game Over
 gameover.retry,Vuoi riprovare?
 endless.unlocked.notice,Hai sbloccato la Modalità Infinita
+options.language.english,English
+law.runtime.guard,Guardia #{0}
+law.runtime.charges,Cariche: {0}
+law.runtime.protection,Protezione: {0}
+law.runtime.pair,Coppia: #{0} + #{1}
+law.runtime.leapAvailable,Balzo disponibile
+law.runtime.mobileType,Tipo mobile: {0}
+law.runtime.willAct,Agirà: {0}
+law.runtime.rowsToGate,Righe al varco: {0}
+law.runtime.threats,Guardia #{0} · Minacce: {1}
+law.runtime.freeCaptures,Catture gratuite: {0}
