@@ -17,8 +17,8 @@ confirm,Conferma
 cancel,Annulla
 yes,Sì
 no,No
-on,Attivo
-off,Disattivo
+on,ON
+off,OFF
 level,Livello
 turn,Turno
 white,BIANCO
@@ -58,6 +58,7 @@ cutscene.finalDuel,Il tuo regno è finito!\nViva il re!
 start,ENTRA NEL REGNO
 options.threats,MOSTRA MINACCE
 options.music,Musica
+options.musicVolume,Volume musica
 options.sound,Effetti sonori
 options.shake,SCOSSA DELLO SCHERMO
 options.fullscreen,SCHERMO INTERO
@@ -729,9 +730,18 @@ options.blur.medium,MEDIA
 options.blur.wide,AMPIA
 options.intensity,Intensità
 options.font,Font
-extra.lawbook,Libro delle leggi
-lawbook.title,Libro delle leggi
+extra.lawbook,Legislazione
+lawbook.title,Legislazione
 pause.resume,Riprendi la partita
 pause.mainmenu,Torna al menu principale
 law.999.name,Fino all'ultima mossa!
 law.999.description,"Dopo ogni turno completo, la Guardia Reale e la Regina nemica vengono trasformate in un pezzo degli scacchi a caso."
+options.scanlines,Scanlines
+pause.exit.title,Uscire dalla partita?
+pause.exit.warning,"Vuoi veramente uscire dalla partita?
+La partita non viene salvata."
+pause.exit.yes,"Sì, termina la partita!"
+pause.exit.no,"No, continua il gioco!"
+gameover.title,Game Over
+gameover.retry,Vuoi riprovare?
+endless.unlocked.notice,Hai sbloccato la Modalità Infinita
