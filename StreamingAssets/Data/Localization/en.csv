@@ -761,3 +761,8 @@ law.runtime.willAct,Will act: {0}
 law.runtime.rowsToGate,Rows to gate: {0}
 law.runtime.threats,Guard #{0} · Threats: {1}
 law.runtime.freeCaptures,Free captures: {0}
+options.gameplay,Gameplay
+options.chessboardSize,Chessboard size
+options.chessboard.default,Default
+options.chessboard.big,Big
+options.chessboard.veryBig,Very Big

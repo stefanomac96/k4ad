@@ -34,7 +34,18 @@ by rurr
 "DejaVu Sans Mono"
 by Bitstream
 
-GRAPHICS
+SPRITES:
+
+From Itch.io
+
+"Urizen 1Bit Tileset"
+by vurmux
+
+"The Roguelike 1-Bit"
+by Backterria
+
+FULLSCREEN ILLUSTRATIONS:
+
 The illustrations were generated
 TEMPORARILY and exclusively for
 the PROTOTYPE using AI.

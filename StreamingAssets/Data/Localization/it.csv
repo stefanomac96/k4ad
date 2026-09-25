@@ -756,3 +756,8 @@ law.runtime.willAct,Agirà: {0}
 law.runtime.rowsToGate,Righe al varco: {0}
 law.runtime.threats,Guardia #{0} · Minacce: {1}
 law.runtime.freeCaptures,Catture gratuite: {0}
+options.gameplay,Gioco
+options.chessboardSize,Dimensioni della scacchiera
+options.chessboard.default,Default
+options.chessboard.big,Grande
+options.chessboard.veryBig,Molto grande
