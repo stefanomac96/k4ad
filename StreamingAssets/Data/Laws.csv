@@ -1,4 +1,4 @@
-ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
+﻿ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 1,LAW #001,NESSUNA RITIRATA,Guard movement,Le guardie non possono muoversi verso il basso.,2,16,2-16,Malus,guard.allowBackward=false
 2,LAW #002,GIURAMENTO ORTOGONALE,Guard movement,Le guardie possono muoversi solo in verticale o orizzontale.,2,16,2-16,Misto,guard.allowDiagonal=false
 3,LAW #003,GIURAMENTO DIAGONALE,Guard movement,Le guardie possono muoversi solo in diagonale.,2,16,2-16,Misto,guard.allowOrthogonal=false
@@ -18,9 +18,9 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 17,LAW #017,LONTANO DAL BORDO,Guard movement,Le guardie non possono terminare il movimento su una casella di bordo della strada.,4,18,4-18,Malus,guard.blockRoadEdge=true
 18,LAW #018,EDGE RUNNERS,Guard movement,Le guardie sulle caselle di bordo possono fare un passo di 2 caselle verso l'interno una volta per livello.,6,14,6-14,Bonus,guard.edgeDashCharges=1
 19,LAW #019,SALTA LA FILA,Guard movement,Una volta per guardia è possibile saltare un pezzo adiacente e atterrare nella casella immediatamente oltre.,6,20,6-20,Bonus,guard.jumpAdjacentCharges=1
-20,LAW #020,SCAMBIO REALE,Guard movement,Due guardie adiacenti possono scambiarsi di posto consumando un turno.,3,17,3-17,Bonus,guard.allowFriendlySwap=true
+20,LAW #020,RACCOMANDAZIONE REALE,Turn flow,"Quando una guardia raggiunge il checkpoint reticolato, il giocatore può continuare a giocare per cinque turni consecutivi.",3,17,3-17,Bonus,checkpoint.freePlayerMovesOnCross=5
 21,LAW #021,DISTANZA DAL NEMICO,Guard movement,Una mossa senza cattura non può terminare adiacente a un nemico.,2,8,2-8,Malus,guard.quietMoveAvoidEnemyAdjacency=true
-22,LAW #022,SALTO FINALE,Guard movement,Dalla riga immediatamente precedente al checkpoint una guardia può saltare direttamente oltre il reticolo.,5,19,5-19,Bonus,guard.finalLeap=true
+22,LAW #022,DOPPIO SALTO FINALE,Guard movement,"Dalla penultima riga precedente al checkpoint, una guardia può andare al checkpoint con una mossa sola se ha strada libera.",5,19,5-19,Bonus,guard.finalLeap=true
 23,LAW #023,COLONNA LASCIATA,Guard movement,"Dopo un cambio di colonna, una guardia non può tornare subito alla colonna precedente.",5,13,5-13,Malus,guard.blockReturnToPreviousColumn=true
 24,LAW #024,SHORT REIGN,Guard movement,"Dopo 3 mosse della stessa guardia, deve essere scelta un'altra guardia prima di riutilizzarla.",3,10,3-10,Malus,guard.maxConsecutiveUses=3
 25,LAW #025,FREE KING,Guard movement,Una volta per livello puoi muovere una guardia di 2 caselle in qualunque direzione ignorando il primo ostacolo non nemico.,10,20,10-20,Bonus,guard.freeKingCharge=1
@@ -45,7 +45,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 44,LAW #044,SCOSSA DELLA PERDITA,Turn flow,La prima guardia catturata concede al nemico una mossa aggiuntiva.,6,16,6-16,Malus,enemy.extraResponseAfterFirstGuardDeath=1
 45,LAW #045,FINAL SPRINT,Turn flow,"Quando la prima guardia supera il checkpoint, la successiva mossa non provoca risposta nemica.",5,15,5-15,Bonus,turn.freeMoveAfterFirstCross=1
 46,LAW #046,SLOW CLOCK,Turn flow,I nemici agiscono soltanto dopo ogni 2 mosse delle guardie.,2,6,2-6,Bonus,enemy.responseInterval=2
-47,LAW #047,OROLOGIO VELOCE,Turn flow,I nemici agiscono dopo ogni mossa e ogni quarto turno hanno un'attivazione extra.,8,20,8-20,Malus,enemy.extraActivationEvery=4
+47,LAW #047,OROLOGIO VELOCE,Turn flow,"Ogni quattro mosse delle guardie, i nemici possono muovere per due mosse consecutive.",8,20,8-20,Malus,enemy.doubleResponseEvery=4
 48,LAW #048,EVEN TURNS,Turn flow,Una singola mossa nemica segue soltanto le mosse pari del giocatore.,2,9,2-9,Bonus,enemy.activeTurnParity=Even
 49,LAW #049,ODD TURNS,Turn flow,Una singola mossa nemica segue soltanto le mosse dispari del giocatore.,2,9,2-9,Bonus,enemy.activeTurnParity=Odd
 50,LAW #050,PAUSA REALE,Turn flow,Una volta nel livello congela per un turno tutti i nemici visibili.,10,20,10-20,Bonus,turn.freezeAllCharges=1
@@ -122,7 +122,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 121,LAW #121,CENTER TARGET,Enemy range & attacks,I nemici preferiscono guardie vicine alla linea centrale.,5,13,5-13,Malus,enemy.targetPriority=Centerline
 122,LAW #122,UNA CATTURA CIASCUNO,Enemy range & attacks,Ogni pezzo nemico può effettuare al massimo un attacco riuscito nel livello.,2,16,2-16,Bonus,enemy.maxKillsPerPiece=1
 123,LAW #123,PAUSA FRA CATTURE,Enemy range & attacks,"Dopo un attacco, quel nemico non può attaccare nella risposta successiva.",4,18,4-18,Bonus,enemy.attackCooldown=1
-124,LAW #124,LUNGA VISTA,Enemy range & attacks,Tutti i pezzi a gittata aumentano la portata di 1.,10,20,10-20,Malus,enemy.rangedMaxRangeDelta=+1
+124,LAW #124,LUNGA VISTA,Enemy range & attacks,Tutti i pezzi a gittata riducono la portata di 5.,10,20,10-20,Malus,enemy.rangedRangeReduction=5
 125,LAW #125,VISTA CORTA,Enemy range & attacks,"Tutti i pezzi a gittata riducono la portata di 1, minimo 1.",2,16,2-16,Bonus,enemy.rangedMaxRangeDelta=-1
 126,LAW #126,KNIGHT COUNTRY,Enemy composition & spawn,Aumenta fortemente il peso di generazione dei Cavalli.,2,8,2-8,Misto,spawn.knightWeight*=2
 127,LAW #127,BISHOP COUNTRY,Enemy composition & spawn,Aumenta fortemente il peso di generazione degli Alfieri.,3,10,3-10,Misto,spawn.bishopWeight*=2
@@ -130,7 +130,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 129,LAW #129,NO KNIGHTS,Enemy composition & spawn,Nel livello non vengono generati Cavalli.,2,8,2-8,Bonus,spawn.knightWeight=0
 130,LAW #130,NO BISHOPS,Enemy composition & spawn,Nel livello non vengono generati Alfieri.,2,9,2-9,Bonus,spawn.bishopWeight=0
 131,LAW #131,NO ROOKS,Enemy composition & spawn,Nel livello non vengono generate Torri.,2,9,2-9,Bonus,spawn.rookWeight=0
-132,LAW #132,SOLO CAVALLI,Enemy composition & spawn,Tutti i nemici generati sono Cavalli.,4,18,4-18,Misto,spawn.allowedTypes=Knight
+132,LAW #132,RODEO,Enemy composition & spawn,Tutti i nemici generati sono Cavalli.,4,18,4-18,Misto,spawn.allowedTypes=Knight
 133,LAW #133,ONLY BISHOPS,Enemy composition & spawn,Tutti i nemici generati sono Alfieri.,5,12,5-12,Misto,spawn.allowedTypes=Bishop
 134,LAW #134,ONLY ROOKS,Enemy composition & spawn,Tutti i nemici generati sono Torri.,5,12,5-12,Misto,spawn.allowedTypes=Rook
 135,LAW #135,MENO NEMICI,Enemy composition & spawn,Riduce del 25% il numero di nemici del livello.,2,16,2-16,Bonus,spawn.countMultiplier=0.75
@@ -185,18 +185,18 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 184,LAW #184,LOCKED UNTIL FIVE,Tiles & checkpoint,Il checkpoint diventa valido solo dopo il turno 5.,4,11,4-11,Malus,checkpoint.unlockTurn=5
 185,LAW #185,LOCKED UNTIL EIGHT,Tiles & checkpoint,Il checkpoint diventa valido solo dopo il turno 8.,8,16,8-16,Malus,checkpoint.unlockTurn=8
 186,LAW #186,VARCO BIANCO,Tiles & checkpoint,Sono valide per l'uscita soltanto le caselle bianche dell'ultima riga.,3,9,3-9,Malus,checkpoint.allowedBaseColor=White
-187,LAW #187,CASELLA SICURA,Tiles & checkpoint,Una casella ciano casuale protegge dalle catture la guardia che la occupa.,2,16,2-16,Bonus,tiles.safeTileCount=1
+187,LAW #187,CASELLE SICURE,Tiles & checkpoint,15 caselle ciano casuali proteggono dalle catture le guardie che le occupano.,2,16,2-16,Bonus,tiles.safeTileCount=15
 188,LAW #188,TWO SAFE TILES,Tiles & checkpoint,Due caselle ciano casuali sono immuni agli attacchi.,5,12,5-12,Bonus,tiles.safeTileCount=2
 189,LAW #189,BLOCCHI MAGENTA,Tiles & checkpoint,Genera 10 caselle viola invalicabili sulla strada.,4,18,4-18,Malus,tiles.blockedCount=10
 190,LAW #190,PURPLE FIELD,Tiles & checkpoint,Genera 4 caselle viola invalicabili.,8,17,8-17,Malus,tiles.blockedCount=4
-191,LAW #191,BLOCCO EVANESCENTE,Tiles & checkpoint,Due blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.,6,20,6-20,Misto,tiles.blockedCount=2;tiles.blockDecayInterval=4
+191,LAW #191,BLOCCO EVANESCENTE,Tiles & checkpoint,Quindici blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.,6,20,6-20,Misto,tiles.blockedCount=15;tiles.blockDecayInterval=4
 192,LAW #192,RISING BLOCK,Tiles & checkpoint,Ogni 5 turni una casella libera davanti alle guardie diventa bloccata.,10,20,10-20,Malus,tiles.addBlockEvery=5
 193,LAW #193,CASELLA A SENSO UNICO,Tiles & checkpoint,Una casella marcata può essere attraversata solo in direzione avanti.,5,19,5-19,Misto,tiles.oneWayCount=1
 194,LAW #194,TWO WAY TILES,Tiles & checkpoint,Due caselle marcate possono essere attraversate solo ortogonalmente.,6,14,6-14,Misto,tiles.orthogonalOnlyCount=2
 195,LAW #195,DIAGONAL TILES,Tiles & checkpoint,Due caselle marcate possono essere raggiunte solo con movimento diagonale.,6,14,6-14,Misto,tiles.diagonalOnlyCount=2
 196,LAW #196,REST TILE,Tiles & checkpoint,La prima guardia che termina su una casella ciano non provoca risposta nemica.,4,11,4-11,Bonus,tiles.freeMoveTileCount=1
 197,LAW #197,ALARM TILE,Tiles & checkpoint,La prima guardia che termina su una casella viola provoca una risposta nemica extra.,7,16,7-16,Malus,tiles.alarmTileCount=1
-198,LAW #198,CASELLA FRAGILE,Tiles & checkpoint,"Dopo essere stata lasciata, una casella marcata diventa inutilizzabile.",8,20,8-20,Malus,tiles.crumbleCount=3
+198,LAW #198,IMPRONTE DI CAVALLI,Tiles & checkpoint,"Tutte le caselle che sono state occupate da un cavallo, diventeranno inaccessibili quando quest'ultimo si muoverà da esse.",8,20,8-20,Malus,enemy.knightTrailBlocks=true
 199,LAW #199,CASELLA DEL BALZO,Tiles & checkpoint,La prima guardia che raggiunge una casella ciano marcata ottiene un balzo di due caselle su percorso libero.,5,13,5-13,Bonus,tiles.grantDashCount=1
 200,LAW #200,VARCO ALTERNATO,Tiles & checkpoint,Le caselle valide del checkpoint alternano attivo/inattivo a ogni turno.,10,20,10-20,Malus,checkpoint.alternateCells=true
 201,LAW #201,VISTA DEL CAVALLO,Visibility & information,Al passaggio del mouse su un Cavallo nemico vengono mostrate le sue destinazioni legali.,2,8,2-8,Bonus,ui.hoverMovesType=Knight
@@ -205,16 +205,16 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 204,LAW #204,PEDONI PRUDENTI,Visibility & information,I Pedoni nemici non possono catturare nella prima risposta nemica.,5,13,5-13,Bonus,enemy.pawn.openingCaptureDelay=1
 205,LAW #205,PORTATE SCRITTE,Visibility & information,Ogni nemico a lunga gittata mostra accanto al pezzo la propria portata massima.,2,9,2-9,Bonus,ui.showEnemyRangeNumbers=true
 206,LAW #206,SCELTA ANNUNCIATA,Visibility & information,"All'inizio del turno bianco viene indicato il nemico più vicino a una guardia, che agirà se avrà una mossa legale.",5,19,5-19,Misto,enemy.actorMode=AnnouncedNearest
-207,LAW #207,TIPO NASCOSTO,Visibility & information,I nemici lontani appaiono come simboli generici finché non sono entro 4 righe.,4,18,4-18,Malus,enemy.revealTypeDistance=4
+207,LAW #207,DOVE SONO I MIEI OCCHIALI?,Visibility & information,"I nemici lontani appaiono come simboli ""?"" finché non sono entro 4 righe.",4,18,4-18,Malus,enemy.revealTypeDistance=4
 208,LAW #208,LATE IDENTITY,Visibility & information,Il tipo del nemico viene rivelato solo entro 2 righe.,8,16,8-16,Malus,enemy.revealTypeDistance=2
 209,LAW #209,PORTATA VISIBILE,Visibility & information,"Quando selezioni un nemico, mostra la sua portata massima con un bordo sottile.",2,16,2-16,Bonus,ui.enemyRangeOnSelect=true
 210,LAW #210,PASSO SOTTO GLI OCCHI,Visibility & information,La casella di partenza di ogni nemico resta marcata per tutto il livello.,3,10,3-10,Bonus,ui.markEnemyStartTiles=true
 211,LAW #211,INDIZIO DI MOSSA,Visibility & information,Una volta ogni 5 turni evidenzia per un istante una mossa legale casuale.,2,16,2-16,Bonus,ui.hintInterval=5
-212,LAW #212,BUSSOLA DELLE GUARDIE,Visibility & information,La guardia selezionata mostra le direzioni consentite dalla LAW attiva.,2,16,2-16,Bonus,ui.guardDirectionCompass=true
+212,LAW #212,RALLENTARE,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 5 caselle.,2,16,2-16,Bonus,enemy.rook.maxRange=5;enemy.bishop.maxRange=5
 213,LAW #213,CONTA CATTURE,Visibility & information,Accanto a ogni guardia viene mostrato il numero delle sue catture nel livello.,2,8,2-8,Bonus,ui.showGuardCaptureCounts=true
 214,LAW #214,CONTA MOSSE,Visibility & information,Accanto a ogni guardia viene mostrato il numero delle sue mosse nel livello.,3,10,3-10,Bonus,ui.showGuardMoveCounts=true
 215,LAW #215,ULTIMO CACCIATORE,Visibility & information,Il nemico che ha effettuato l'ultima cattura resta contrassegnato fino alla cattura successiva.,6,15,6-15,Bonus,ui.markLastCapturingEnemy=true
-216,LAW #216,DISTANZA DAL VARCO,Visibility & information,La guardia selezionata mostra quante righe la separano dal checkpoint.,2,16,2-16,Bonus,ui.showRowsToCheckpoint=true
+216,LAW #216,ADAGIO ADAGIO,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 2 caselle.,2,16,2-16,Bonus,enemy.rook.maxRange=2;enemy.bishop.maxRange=2
 217,LAW #217,VARCO NERO,Visibility & information,Sono valide per l'uscita soltanto le caselle nere dell'ultima riga.,5,13,5-13,Malus,checkpoint.allowedBaseColor=Black
 218,LAW #218,CONTA NEMICI,Visibility & information,Mostra nell'HUD il numero dei nemici attualmente presenti sulla scacchiera.,2,9,2-9,Bonus,ui.showBoardEnemyCount=true
 219,LAW #219,TIPI IN CAMPO,Visibility & information,Mostra nell'HUD quanti nemici restano per ciascun tipo di pezzo.,3,10,3-10,Bonus,ui.showEnemyTypeCounts=true
@@ -222,7 +222,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 221,LAW #221,GUARDIA PIÙ ESPOSTA,Visibility & information,Indica la guardia attiva minacciata dal maggior numero di nemici.,5,19,5-19,Bonus,ui.markMostThreatenedGuard=true
 222,LAW #222,LAST MOVE TRACE,Visibility & information,Mostra per un turno la casella precedente della guardia appena mossa.,2,8,2-8,Bonus,ui.showLastMoveTrace=true
 223,LAW #223,ENEMY TRACE,Visibility & information,Mostra per un turno la casella da cui si è mosso ogni nemico.,2,10,2-10,Bonus,ui.showEnemyMoveTrace=true
-224,LAW #224,IMPULSO BUIO,Visibility & information,Ogni 6 turni le informazioni tattiche non essenziali spariscono per un turno.,8,20,8-20,Malus,ui.blackoutEvery=6
+224,LAW #224,FRENATA,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 1 casella.,8,20,8-20,Bonus,enemy.rook.maxRange=1;enemy.bishop.maxRange=1
 225,LAW #225,ROYAL MEMORY,Visibility & information,Le caselle già visitate dalle guardie restano marcate con un piccolo punto ciano.,3,12,3-12,Bonus,ui.markVisitedTiles=true
 226,LAW #226,CATTURA LIBERA,Capture & occupancy,La prima cattura del livello non provoca risposta nemica.,2,16,2-16,Bonus,capture.freeResponses=1
 227,LAW #227,TWO FREE CAPTURES,Capture & occupancy,Le prime due catture non provocano risposta nemica.,5,12,5-12,Bonus,capture.freeResponses=2
@@ -287,7 +287,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 286,LAW #286,TIGHT CALM,Combined laws,"Strada più stretta di due colonne, ma nelle prime due risposte nessun nemico può muovere o catturare.",5,13,5-13,Misto,road.widthDelta=-2;enemy.moveDelayTurns=2
 287,LAW #287,PIEDI VELOCI,Combined laws,"Ogni guardia ha un Dash, ma non può essere scelta due volte di fila.",6,20,6-20,Misto,combo=PersonalDash1+NoRepeat
 288,LAW #288,PASSI PESANTI,Combined laws,"Le guardie muovono solo ortogonalmente, ma la squadra ignora la prima cattura subita.",2,9,2-9,Misto,guard.allowDiagonal=false;team.shieldCharges=1
-289,LAW #289,VARCHI MAGENTA,Combined laws,"2 caselle bloccate, ma 2 caselle sicure ciano.",5,19,5-19,Misto,combo=Blocked2+Safe2
+289,LAW #289,CAMPO MINATO,Combined laws,"10 caselle bloccate, ma 10 caselle sicure ciano.",5,19,5-19,Misto,tiles.blockedCount=10;tiles.safeTileCount=10
 290,LAW #290,BALZO E PERICOLO,Combined laws,"Ogni guardia ha un balzo di due caselle, ma i nemici a lunga gittata guadagnano una casella di portata.",6,14,6-14,Misto,guard.personalDashCharges=1;enemy.rangedMaxRangeDelta=1
 291,LAW #291,CHIARO E CRUDELE,Combined laws,"Mostra la portata scritta dei nemici, ma ne genera il 25% in più.",6,14,6-14,Misto,ui.showEnemyRangeNumbers=true;spawn.countMultiplier=1.25
 292,LAW #292,GIORNO DEL VARCO,Combined laws,"Il checkpoint richiede ingresso diagonale, ma le Torri hanno portata massima due.",5,13,5-13,Misto,checkpoint.entryAxis=Diagonal;enemy.rook.maxRange=2

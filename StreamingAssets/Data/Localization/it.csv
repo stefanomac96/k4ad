@@ -131,12 +131,12 @@ law.018.name,CORRIDORI DEL BORDO
 law.018.description,Le guardie sulle caselle di bordo possono fare un passo di 2 caselle verso l'interno una volta per livello.
 law.019.name,SALTA LA FILA
 law.019.description,Una volta per guardia è possibile saltare un pezzo adiacente e atterrare nella casella immediatamente oltre.
-law.020.name,SCAMBIO REALE
-law.020.description,Due guardie adiacenti possono scambiarsi di posto consumando un turno.
+law.020.name,RACCOMANDAZIONE REALE
+law.020.description,"Quando una guardia raggiunge il checkpoint reticolato, il giocatore può continuare a giocare per cinque turni consecutivi."
 law.021.name,DISTANZA DAL NEMICO
 law.021.description,Una mossa senza cattura non può terminare adiacente a un nemico.
-law.022.name,SALTO FINALE
-law.022.description,Dalla riga immediatamente precedente al checkpoint una guardia può saltare direttamente oltre il reticolo.
+law.022.name,DOPPIO SALTO FINALE
+law.022.description,"Dalla penultima riga precedente al checkpoint, una guardia può andare al checkpoint con una mossa sola se ha strada libera."
 law.023.name,COLONNA LASCIATA
 law.023.description,"Dopo un cambio di colonna, una guardia non può tornare subito alla colonna precedente."
 law.024.name,REGNO BREVE
@@ -186,7 +186,7 @@ law.045.description,"Quando la prima guardia supera il checkpoint, la successiva
 law.046.name,OROLOGIO LENTO
 law.046.description,I nemici agiscono soltanto dopo ogni 2 mosse delle guardie.
 law.047.name,OROLOGIO VELOCE
-law.047.description,I nemici agiscono dopo ogni mossa e ogni quarto turno hanno un'attivazione extra.
+law.047.description,"Ogni quattro mosse delle guardie, i nemici possono muovere per due mosse consecutive."
 law.048.name,TURNI PARI
 law.048.description,Una singola mossa nemica segue soltanto le mosse pari del giocatore.
 law.049.name,TURNI DISPARI
@@ -340,7 +340,7 @@ law.122.description,Ogni pezzo nemico può effettuare al massimo un attacco rius
 law.123.name,PAUSA FRA CATTURE
 law.123.description,"Dopo un attacco, quel nemico non può attaccare nella risposta successiva."
 law.124.name,LUNGA VISTA
-law.124.description,Tutti i pezzi a gittata aumentano la portata di 1.
+law.124.description,Tutti i pezzi a gittata riducono la portata di 5.
 law.125.name,VISTA CORTA
 law.125.description,"Tutti i pezzi a gittata riducono la portata di 1, minimo 1."
 law.126.name,TERRA DEI CAVALLI
@@ -355,7 +355,7 @@ law.130.name,NESSUN ALFIERE
 law.130.description,Nel livello non vengono generati Alfieri.
 law.131.name,NESSUNA TORRE
 law.131.description,Nel livello non vengono generate Torri.
-law.132.name,SOLO CAVALLI
+law.132.name,RODEO
 law.132.description,Tutti i nemici generati sono Cavalli.
 law.133.name,SOLO ALFIERI
 law.133.description,Tutti i nemici generati sono Alfieri.
@@ -465,8 +465,8 @@ law.185.name,CHIUSO FINO ALL'OTTAVO
 law.185.description,Il checkpoint diventa valido solo dopo il turno 8.
 law.186.name,VARCO BIANCO
 law.186.description,Sono valide per l'uscita soltanto le caselle bianche dell'ultima riga.
-law.187.name,CASELLA SICURA
-law.187.description,Una casella ciano casuale protegge dalle catture la guardia che la occupa.
+law.187.name,CASELLE SICURE
+law.187.description,15 caselle ciano casuali proteggono dalle catture le guardie che le occupano.
 law.188.name,DUE CASELLE SICURE
 law.188.description,Due caselle ciano casuali sono immuni agli attacchi.
 law.189.name,BLOCCHI MAGENTA
@@ -474,7 +474,7 @@ law.189.description,Genera 10 caselle viola invalicabili sulla strada.
 law.190.name,CAMPO MAGENTA
 law.190.description,Genera 4 caselle viola invalicabili.
 law.191.name,BLOCCO EVANESCENTE
-law.191.description,Due blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.
+law.191.description,Quindici blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.
 law.192.name,BLOCCO CRESCENTE
 law.192.description,Ogni 5 turni una casella libera davanti alle guardie diventa bloccata.
 law.193.name,CASELLA A SENSO UNICO
@@ -487,8 +487,8 @@ law.196.name,CASELLA DI RIPOSO
 law.196.description,La prima guardia che termina su una casella ciano non provoca risposta nemica.
 law.197.name,CASELLA DI ALLARME
 law.197.description,La prima guardia che termina su una casella viola provoca una risposta nemica extra.
-law.198.name,CASELLA FRAGILE
-law.198.description,"Dopo essere stata lasciata, una casella marcata diventa inutilizzabile."
+law.198.name,IMPRONTE DI CAVALLI
+law.198.description,"Tutte le caselle che sono state occupate da un cavallo, diventeranno inaccessibili quando quest'ultimo si muoverà da esse."
 law.199.name,CASELLA DEL BALZO
 law.199.description,La prima guardia che raggiunge una casella ciano marcata ottiene un balzo di due caselle su percorso libero.
 law.200.name,VARCO ALTERNATO
@@ -505,8 +505,8 @@ law.205.name,PORTATE SCRITTE
 law.205.description,Ogni nemico a lunga gittata mostra accanto al pezzo la propria portata massima.
 law.206.name,SCELTA ANNUNCIATA
 law.206.description,"All'inizio del turno bianco viene indicato il nemico più vicino a una guardia, che agirà se avrà una mossa legale."
-law.207.name,TIPO NASCOSTO
-law.207.description,I nemici lontani appaiono come simboli generici finché non sono entro 4 righe.
+law.207.name,DOVE SONO I MIEI OCCHIALI?
+law.207.description,"I nemici lontani appaiono come simboli ""?"" finché non sono entro 4 righe."
 law.208.name,IDENTITÀ TARDIVA
 law.208.description,Il tipo del nemico viene rivelato solo entro 2 righe.
 law.209.name,PORTATA VISIBILE
@@ -515,16 +515,16 @@ law.210.name,PASSO SOTTO GLI OCCHI
 law.210.description,La casella di partenza di ogni nemico resta marcata per tutto il livello.
 law.211.name,INDIZIO DI MOSSA
 law.211.description,Una volta ogni 5 turni evidenzia per un istante una mossa legale casuale.
-law.212.name,BUSSOLA DELLE GUARDIE
-law.212.description,La guardia selezionata mostra le direzioni consentite dalla LAW attiva.
+law.212.name,RALLENTARE
+law.212.description,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 5 caselle.
 law.213.name,CONTA CATTURE
 law.213.description,Accanto a ogni guardia viene mostrato il numero delle sue catture nel livello.
 law.214.name,CONTA MOSSE
 law.214.description,Accanto a ogni guardia viene mostrato il numero delle sue mosse nel livello.
 law.215.name,ULTIMO CACCIATORE
 law.215.description,Il nemico che ha effettuato l'ultima cattura resta contrassegnato fino alla cattura successiva.
-law.216.name,DISTANZA DAL VARCO
-law.216.description,La guardia selezionata mostra quante righe la separano dal checkpoint.
+law.216.name,ADAGIO ADAGIO
+law.216.description,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 2 caselle.
 law.217.name,VARCO NERO
 law.217.description,Sono valide per l'uscita soltanto le caselle nere dell'ultima riga.
 law.218.name,CONTA NEMICI
@@ -539,8 +539,8 @@ law.222.name,TRACCIA DELLA GUARDIA
 law.222.description,Mostra per un turno la casella precedente della guardia appena mossa.
 law.223.name,TRACCIA NEMICA
 law.223.description,Mostra per un turno la casella da cui si è mosso ogni nemico.
-law.224.name,IMPULSO BUIO
-law.224.description,Ogni 6 turni le informazioni tattiche non essenziali spariscono per un turno.
+law.224.name,FRENATA
+law.224.description,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 1 casella.
 law.225.name,MEMORIA REALE
 law.225.description,Le caselle già visitate dalle guardie restano marcate con un piccolo punto ciano.
 law.226.name,CATTURA LIBERA
@@ -669,8 +669,8 @@ law.287.name,PIEDI VELOCI
 law.287.description,"Ogni guardia ha un Dash, ma non può essere scelta due volte di fila."
 law.288.name,PASSI PESANTI
 law.288.description,"Le guardie muovono solo ortogonalmente, ma la squadra ignora la prima cattura subita."
-law.289.name,VARCHI MAGENTA
-law.289.description,"2 caselle bloccate, ma 2 caselle sicure ciano."
+law.289.name,CAMPO MINATO
+law.289.description,"10 caselle bloccate, ma 10 caselle sicure ciano."
 law.290.name,BALZO E PERICOLO
 law.290.description,"Ogni guardia ha un balzo di due caselle, ma i nemici a lunga gittata guadagnano una casella di portata."
 law.291.name,CHIARO E CRUDELE

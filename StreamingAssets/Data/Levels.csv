@@ -1,6 +1,6 @@
 Level,Width,EnemyCount,AllowedTypes
 1,6,2,Pawn
-2,6,2,Pawn
+2,6,2,Pawn|Knight
 3,6,3,Pawn|Knight
 4,6,3,Pawn|Knight
 5,6,4,Pawn|Knight|Bishop

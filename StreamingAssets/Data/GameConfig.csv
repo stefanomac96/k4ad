@@ -9,8 +9,8 @@ road.curvePersistence,2
 road.centerAttraction,0.15
 road.branchChance,0.22
 campaign.levels,20
-enemy.rook.maxRange,5
-enemy.bishop.maxRange,5
+enemy.rook.maxRange,-1
+enemy.bishop.maxRange,-1
 enemy.queen.maxRange,5
 spawn.safeStartRows,4
 spawn.safeCheckpointRows,0
