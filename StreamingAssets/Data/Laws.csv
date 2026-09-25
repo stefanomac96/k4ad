@@ -1,4 +1,4 @@
-﻿ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
+ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 1,LAW #001,NESSUNA RITIRATA,Guard movement,Le guardie non possono muoversi verso il basso.,2,16,2-16,Malus,guard.allowBackward=false
 2,LAW #002,GIURAMENTO ORTOGONALE,Guard movement,Le guardie possono muoversi solo in verticale o orizzontale.,2,16,2-16,Misto,guard.allowDiagonal=false
 3,LAW #003,GIURAMENTO DIAGONALE,Guard movement,Le guardie possono muoversi solo in diagonale.,2,16,2-16,Misto,guard.allowOrthogonal=false
@@ -96,7 +96,7 @@
 95,LAW #095,TORRE IN RITARDO,Enemy movement,Le Torri non possono muovere o catturare nelle prime due risposte nemiche.,3,10,3-10,Bonus,enemy.rook.openingDelay=2
 96,LAW #096,PRIORITÀ AGLI ALFIERI,Enemy movement,"Se un Alfiere ha una mossa legale, l'avversario deve scegliere un Alfiere.",7,16,7-16,Misto,enemy.preferredActorType=Bishop
 97,LAW #097,SETTORE ASSEGNATO,Enemy movement,I nemici devono restare nella metà sinistra o destra della griglia in cui iniziano il livello.,5,19,5-19,Bonus,enemy.lockInitialBoardHalf=true
-98,LAW #098,COLONNE VINCOLATE,Enemy movement,Le Torri nemiche possono muoversi e catturare soltanto in verticale.,4,18,4-18,Bonus,enemy.rook.allowedAxis=Vertical
+98,LAW #098,COLONNE VINCOLATE,Enemy movement,"Le Torri nemiche si muovono e catturano soltanto in diagonale, come gli Alfieri.",4,18,4-18,Bonus,enemy.rook.allowedAxis=Diagonal
 99,LAW #099,UN SOLO TIPO MOBILE,Enemy movement,Un solo tipo nemico estratto fra quelli presenti può muovere o catturare; tutti gli altri restano immobili.,5,19,5-19,Misto,enemy.randomMobileType=1
 100,LAW #100,CAMBIO DELLA GUARDIA,Enemy movement,L'avversario non può scegliere lo stesso pezzo in due risposte consecutive se un altro può muovere.,12,20,12-20,Bonus,enemy.blockRepeatActorWhenAlternative=true
 101,LAW #101,SHORT ROOKS,Enemy range & attacks,Portata massima delle Torri ridotta a 2 caselle.,2,7,2-7,Bonus,enemy.rook.maxRange=2
@@ -187,7 +187,7 @@
 186,LAW #186,VARCO BIANCO,Tiles & checkpoint,Sono valide per l'uscita soltanto le caselle bianche dell'ultima riga.,3,9,3-9,Malus,checkpoint.allowedBaseColor=White
 187,LAW #187,CASELLA SICURA,Tiles & checkpoint,Una casella ciano casuale protegge dalle catture la guardia che la occupa.,2,16,2-16,Bonus,tiles.safeTileCount=1
 188,LAW #188,TWO SAFE TILES,Tiles & checkpoint,Due caselle ciano casuali sono immuni agli attacchi.,5,12,5-12,Bonus,tiles.safeTileCount=2
-189,LAW #189,BLOCCHI MAGENTA,Tiles & checkpoint,Genera 2 caselle viola invalicabili sulla strada.,4,18,4-18,Malus,tiles.blockedCount=2
+189,LAW #189,BLOCCHI MAGENTA,Tiles & checkpoint,Genera 10 caselle viola invalicabili sulla strada.,4,18,4-18,Malus,tiles.blockedCount=10
 190,LAW #190,PURPLE FIELD,Tiles & checkpoint,Genera 4 caselle viola invalicabili.,8,17,8-17,Malus,tiles.blockedCount=4
 191,LAW #191,BLOCCO EVANESCENTE,Tiles & checkpoint,Due blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.,6,20,6-20,Misto,tiles.blockedCount=2;tiles.blockDecayInterval=4
 192,LAW #192,RISING BLOCK,Tiles & checkpoint,Ogni 5 turni una casella libera davanti alle guardie diventa bloccata.,10,20,10-20,Malus,tiles.addBlockEvery=5
@@ -253,7 +253,7 @@
 252,LAW #252,QUINTO PASSO OBLIQUO,Level tempo & progression,Ogni quinta mossa della squadra deve essere diagonale.,3,17,3-17,Malus,guard.forceDiagonalEvery=5
 253,LAW #253,SESTO PASSO DRITTO,Level tempo & progression,Ogni sesta mossa della squadra deve essere ortogonale.,8,18,8-18,Malus,guard.forceOrthogonalEvery=6
 254,LAW #254,ALBA TRANQUILLA,Level tempo & progression,Per le prime due risposte i nemici possono muovere ma non catturare.,2,7,2-7,Bonus,enemy.openingCaptureDelay=2
-255,LAW #255,TRAMONTO STRETTO,Level tempo & progression,I nemici a lunga gittata guadagnano una casella di portata dopo la decima mossa del giocatore.,7,20,7-20,Malus,enemy.rangeBonusAfterTurn=10;enemy.lateRangeDelta=1
+255,LAW #255,TRAMONTO STRETTO,Level tempo & progression,"Dopo la decima mossa del giocatore, i nemici a lunga gittata guadagnano una mossa extra.",7,20,7-20,Malus,enemy.rangedExtraActionAfterTurn=10
 256,LAW #256,EARLY PRESSURE,Level tempo & progression,La densità nemica è maggiore nella prima metà e normale nella seconda.,4,12,4-12,Malus,spawn.firstHalfMultiplier=1.4
 257,LAW #257,LATE PRESSURE,Level tempo & progression,"Prima metà più tranquilla, seconda metà con densità nemica maggiore.",5,13,5-13,Malus,spawn.secondHalfMultiplier=1.4
 258,LAW #258,EVEN PRESSURE,Level tempo & progression,Distribuzione dei nemici più uniforme del normale.,2,8,2-8,Misto,spawn.varianceMultiplier=0.5

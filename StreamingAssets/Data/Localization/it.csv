@@ -288,7 +288,7 @@ law.096.description,"Se un Alfiere ha una mossa legale, l'avversario deve scegli
 law.097.name,SETTORE ASSEGNATO
 law.097.description,I nemici devono restare nella metà sinistra o destra della griglia in cui iniziano il livello.
 law.098.name,COLONNE VINCOLATE
-law.098.description,Le Torri nemiche possono muoversi e catturare soltanto in verticale.
+law.098.description,"Le Torri nemiche si muovono e catturano soltanto in diagonale, come gli Alfieri."
 law.099.name,UN SOLO TIPO MOBILE
 law.099.description,Un solo tipo nemico estratto fra quelli presenti può muovere o catturare; tutti gli altri restano immobili.
 law.100.name,CAMBIO DELLA GUARDIA
@@ -470,7 +470,7 @@ law.187.description,Una casella ciano casuale protegge dalle catture la guardia 
 law.188.name,DUE CASELLE SICURE
 law.188.description,Due caselle ciano casuali sono immuni agli attacchi.
 law.189.name,BLOCCHI MAGENTA
-law.189.description,Genera 2 caselle viola invalicabili sulla strada.
+law.189.description,Genera 10 caselle viola invalicabili sulla strada.
 law.190.name,CAMPO MAGENTA
 law.190.description,Genera 4 caselle viola invalicabili.
 law.191.name,BLOCCO EVANESCENTE
@@ -602,7 +602,7 @@ law.253.description,Ogni sesta mossa della squadra deve essere ortogonale.
 law.254.name,ALBA TRANQUILLA
 law.254.description,Per le prime due risposte i nemici possono muovere ma non catturare.
 law.255.name,TRAMONTO STRETTO
-law.255.description,I nemici a lunga gittata guadagnano una casella di portata dopo la decima mossa del giocatore.
+law.255.description,"Dopo la decima mossa del giocatore, i nemici a lunga gittata guadagnano una mossa extra."
 law.256.name,PRESSIONE INIZIALE
 law.256.description,La densità nemica è maggiore nella prima metà e normale nella seconda.
 law.257.name,PRESSIONE FINALE
@@ -733,3 +733,5 @@ extra.lawbook,Libro delle leggi
 lawbook.title,Libro delle leggi
 pause.resume,Riprendi la partita
 pause.mainmenu,Torna al menu principale
+law.999.name,Fino all'ultima mossa!
+law.999.description,"Dopo ogni turno completo, la Guardia Reale e la Regina nemica vengono trasformate in un pezzo degli scacchi a caso."

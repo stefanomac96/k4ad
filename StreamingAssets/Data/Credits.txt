@@ -1,17 +1,19 @@
-KING 4 A DAY
-
-Ideazione e game design
-Stefano Maccarinelli
+Un gioco di:
 Stelex Software
 
-Font principale
-Minepixel, fornito dall’autore
+Musica:
+Pixabay.com
 
-Font di supporto
-DejaVu Sans Mono (licenza inclusa)
+Effetti sonori:
+Pixabay.com
 
-Progetto Unity e asset procedurali
-Realizzati per questo progetto
+Fonts:
+Alkhemikal
+Eas VHS
+DejaVu Sans Mono
 
-Baseline di design
-GDD 21.09.2026c
+Grafica:
+Blocker AI
+(provvisoria per il prototipo)
+
+Copyright (c) 2026

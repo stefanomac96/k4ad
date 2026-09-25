@@ -1,4 +1,4 @@
-﻿Key,Value
+Key,Value
 board.columns,17
 board.rows,14
 board.width,6
@@ -47,3 +47,9 @@ ui.cursor.size,7
 ui.popup.closeScale,1.2
 ui.version.offsetY,3
 animation.screenTransitionDuration,0.84
+ai.advancedTargetWeight,28
+ai.advancedThreatWeight,10
+ai.mobilityWeight,4
+ai.forkWeight,20
+ai.supportWeight,20
+ai.goalBlockWeight,7
