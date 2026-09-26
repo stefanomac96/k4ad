@@ -1,4 +1,4 @@
-﻿Key,Text
+Key,Text
 game.title,KING 4 A DAY
 menu.new,New Game
 menu.options,Options
@@ -264,8 +264,8 @@ law.082.name,SLEEPY ROOKS
 law.082.description,Rooks move only on every second enemy response.
 law.083.name,HUNTING KNIGHTS
 law.083.description,Knights prefer the legal move that brings them closer to the nearest guard.
-law.084.name,FLEEING KNIGHTS
-law.084.description,Knights prefer to move away from the nearest guard.
+law.084.name,Rise From Your Grave!
+law.084.description,Bring a guard back to life by moving onto the indicated square. The resurrected guard will start from the starting row.
 law.085.name,HUNTING BISHOPS
 law.085.description,Bishops prefer to move toward the nearest guard.
 law.086.name,HUNTING ROOKS
@@ -763,6 +763,53 @@ law.runtime.threats,Guard #{0} · Threats: {1}
 law.runtime.freeCaptures,Free captures: {0}
 options.gameplay,Gameplay
 options.chessboardSize,Chessboard size
-options.chessboard.default,Default
-options.chessboard.big,Big
-options.chessboard.veryBig,Very Big
+options.chessboard.default,Small
+options.chessboard.big,Medium
+options.chessboard.veryBig,Big
+options.fastCheckpoint,Fast checkpoint
+extra.achievements,Achievements
+achievements.title,Achievements
+achievement.number,ACHIEVEMENT #{0}
+achievement.001.name,First Steps
+achievement.001.description,Reach level 5 in Campaign Mode.
+achievement.002.name,Ever Further
+achievement.002.description,Reach level 10 in Campaign Mode.
+achievement.003.name,Almost There
+achievement.003.description,Reach level 15 in Campaign Mode.
+achievement.004.name,At the Castle Gates
+achievement.004.description,Reach level 20 in Campaign Mode.
+achievement.005.name,All Present
+achievement.005.description,Reach the Queen challenge with all 4 Guards still alive.
+achievement.006.name,Checkmate the Queen
+achievement.006.description,Defeat the Black Queen.
+achievement.007.name,Pacifist
+achievement.007.description,Complete a level without capturing any enemy piece.
+achievement.008.name,No Survivors
+achievement.008.description,Complete a level without leaving any enemy piece alive.
+achievement.009.name,Fall from the Horse
+achievement.009.description,All Guards are killed in the same level by enemy Knights.
+achievement.010.name,Civil Code
+achievement.010.description,Unlock at least 10 different Laws.
+achievement.011.name,Jurisprudence
+achievement.011.description,Unlock at least 30 different Laws.
+achievement.012.name,Legislator
+achievement.012.description,Unlock at least 60 different Laws.
+achievement.013.name,Corpus Juris
+achievement.013.description,Unlock all Laws.
+achievement.014.name,The Last Guard
+achievement.014.description,Complete a level with only one Guard still in play.
+achievement.015.name,No One Left Behind
+achievement.015.description,Complete 5 consecutive levels without losing any Guard.
+achievement.016.name,Field Promotion
+achievement.016.description,Promote a Guard for the first time during the final challenge.
+achievement.017.name,David vs. Goliath
+achievement.017.description,Defeat the Queen with only one Guard remaining.
+achievement.018.name,The Journey Continues
+achievement.018.description,Play Endless Mode for the first time.
+achievement.019.name,Beyond the Kingdom
+achievement.019.description,Reach level 25 in Endless Mode.
+achievement.020.name,It Never Ends
+achievement.020.description,Reach level 50 in Endless Mode.
+achievement.021.name,Platinum Chessboard
+achievement.021.description,Unlock all achievements.
+achievement.unlocked,ACHIEVEMENT UNLOCKED:

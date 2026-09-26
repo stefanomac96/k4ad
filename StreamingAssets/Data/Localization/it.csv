@@ -1,4 +1,4 @@
-﻿Key,Text
+Key,Text
 game.title,KING 4 A DAY
 menu.new,Nuova partita
 menu.options,Opzioni
@@ -260,8 +260,8 @@ law.082.name,TORRI ASSONNATE
 law.082.description,Le Torri si muovono solo ogni 2 risposte nemiche.
 law.083.name,CAVALLI CACCIATORI
 law.083.description,I Cavalli preferiscono la mossa legale che li avvicina alla guardia più vicina.
-law.084.name,CAVALLI IN FUGA
-law.084.description,I Cavalli preferiscono allontanarsi dalla guardia più vicina.
+law.084.name,Alzati e cammina!
+law.084.description,Fai tornare in vita una guardia posizionandoti nella casella indicata. La guardia risorta comincerà il livello dalla partenza.
 law.085.name,ALFIERI CACCIATORI
 law.085.description,Gli Alfieri preferiscono muoversi verso la guardia più vicina.
 law.086.name,TORRI CACCIATRICI
@@ -758,6 +758,53 @@ law.runtime.threats,Guardia #{0} · Minacce: {1}
 law.runtime.freeCaptures,Catture gratuite: {0}
 options.gameplay,Gioco
 options.chessboardSize,Dimensioni della scacchiera
-options.chessboard.default,Default
-options.chessboard.big,Grande
-options.chessboard.veryBig,Molto grande
+options.chessboard.default,Piccola
+options.chessboard.big,Media
+options.chessboard.veryBig,Grande
+options.fastCheckpoint,Checkpoint veloce
+extra.achievements,Obiettivi
+achievements.title,Obiettivi
+achievement.number,OBIETTIVO #{0}
+achievement.001.name,Primi passi
+achievement.001.description,Raggiungi il livello 5 in Modalità Campagna.
+achievement.002.name,Sempre più lontano
+achievement.002.description,Raggiungi il livello 10 in Modalità Campagna.
+achievement.003.name,Quasi arrivati
+achievement.003.description,Raggiungi il livello 15 in Modalità Campagna.
+achievement.004.name,Alle porte del castello
+achievement.004.description,Raggiungi il livello 20 in Modalità Campagna.
+achievement.005.name,Tutti presenti
+achievement.005.description,Arriva alla sfida con la Regina con ancora tutte e 4 le Guardie.
+achievement.006.name,Scacco alla Regina
+achievement.006.description,Sconfiggi la Regina Nera.
+achievement.007.name,Pacifista
+achievement.007.description,Completa un livello senza catturare nessun pezzo nemico.
+achievement.008.name,Nessun superstite
+achievement.008.description,Completa un livello senza lasciare in vita nessun pezzo nemico.
+achievement.009.name,Caduta da cavallo
+achievement.009.description,Tutte le Guardie vengono uccise nello stesso livello da nemici di tipo Cavallo.
+achievement.010.name,Codice civile
+achievement.010.description,Sblocca almeno 10 leggi diverse.
+achievement.011.name,Giurisprudenza
+achievement.011.description,Sblocca almeno 30 leggi diverse.
+achievement.012.name,Legislatore
+achievement.012.description,Sblocca almeno 60 leggi diverse.
+achievement.013.name,Corpus Juris
+achievement.013.description,Sblocca tutte le leggi.
+achievement.014.name,L’ultima Guardia
+achievement.014.description,Completa un livello con una sola Guardia ancora in gioco.
+achievement.015.name,Nessuno resta indietro
+achievement.015.description,Completa 5 livelli consecutivi senza perdere nessuna Guardia.
+achievement.016.name,Promozione sul campo
+achievement.016.description,Promuovi per la prima volta una Guardia durante la sfida finale.
+achievement.017.name,Davide contro Golia
+achievement.017.description,Sconfiggi la Regina quando ti è rimasta una sola Guardia.
+achievement.018.name,Il viaggio continua
+achievement.018.description,Gioca per la prima volta in Modalità Infinita.
+achievement.019.name,Oltre il regno
+achievement.019.description,Raggiungi il livello 25 in Modalità Infinita.
+achievement.020.name,Non finisce mai
+achievement.020.description,Raggiungi il livello 50 in Modalità Infinita.
+achievement.021.name,Scacchiera di platino
+achievement.021.description,Sblocca tutti gli obiettivi.
+achievement.unlocked,OBIETTIVO SBLOCCATO:
