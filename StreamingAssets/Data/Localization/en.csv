@@ -346,8 +346,8 @@ law.123.name,COOLDOWN FIRE
 law.123.description,"After an attack, that enemy cannot attack on the next enemy response."
 law.124.name,LONG SIGHT
 law.124.description,All ranged pieces reduce their range by 5.
-law.125.name,SHORT SIGHT
-law.125.description,"All ranged pieces reduce their range by 1, to a minimum of 1."
+law.125.name,METAMORPHOSIS
+law.125.description,"Every 15 guard moves, a random enemy Pawn transforms into a Knight."
 law.126.name,KNIGHT COUNTRY
 law.126.description,Greatly increases the spawn weight of Knights.
 law.127.name,BISHOP COUNTRY
@@ -514,8 +514,8 @@ law.207.name,WHERE ARE MY GLASSES?
 law.207.description,Distant enemies appear as '?' symbols until they are within 4 rows.
 law.208.name,LATE IDENTITY
 law.208.description,An enemy's type is revealed only when it is within 2 rows.
-law.209.name,VISIBLE RANGE
-law.209.description,"When you select an enemy, its maximum range is shown with a thin outline."
+law.209.name,Boom!
+law.209.description,"At the start of the level, a random tile appears with a magenta number starting at 5 and decreasing after every Guard move. When it reaches zero, the tile explodes, removes any piece on it, and becomes unusable. A new tile with the same effect then appears."
 law.210.name,STEP IN PLAIN SIGHT
 law.210.description,Each enemy's starting square remains marked for the entire level.
 law.211.name,NEXT MOVE HINT
@@ -813,3 +813,4 @@ achievement.020.description,Reach level 50 in Endless Mode.
 achievement.021.name,Platinum Chessboard
 achievement.021.description,Unlock all achievements.
 achievement.unlocked,ACHIEVEMENT UNLOCKED:
+law.runtime.metamorphosisCountdown,Metamorphosis: {0}

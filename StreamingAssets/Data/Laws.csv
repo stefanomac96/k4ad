@@ -123,7 +123,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 122,LAW #122,UNA CATTURA CIASCUNO,Enemy range & attacks,Ogni pezzo nemico può effettuare al massimo un attacco riuscito nel livello.,2,16,2-16,Bonus,enemy.maxKillsPerPiece=1
 123,LAW #123,PAUSA FRA CATTURE,Enemy range & attacks,"Dopo un attacco, quel nemico non può attaccare nella risposta successiva.",4,18,4-18,Bonus,enemy.attackCooldown=1
 124,LAW #124,LUNGA VISTA,Enemy range & attacks,Tutti i pezzi a gittata riducono la portata di 5.,10,20,10-20,Malus,enemy.rangedRangeReduction=5
-125,LAW #125,VISTA CORTA,Enemy range & attacks,"Tutti i pezzi a gittata riducono la portata di 1, minimo 1.",2,16,2-16,Bonus,enemy.rangedMaxRangeDelta=-1
+125,LAW #125,METAMORFOSI,Enemy transformation,"Ogni 15 movimenti delle guardie, un pezzo nemico Pedone a caso si trasforma in Cavallo.",2,16,2-16,Malus,enemy.pawnMetamorphosisInterval=15
 126,LAW #126,KNIGHT COUNTRY,Enemy composition & spawn,Aumenta fortemente il peso di generazione dei Cavalli.,2,8,2-8,Misto,spawn.knightWeight*=2
 127,LAW #127,BISHOP COUNTRY,Enemy composition & spawn,Aumenta fortemente il peso di generazione degli Alfieri.,3,10,3-10,Misto,spawn.bishopWeight*=2
 128,LAW #128,ROOK COUNTRY,Enemy composition & spawn,Aumenta fortemente il peso di generazione delle Torri.,3,10,3-10,Misto,spawn.rookWeight*=2
@@ -207,7 +207,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 206,LAW #206,SCELTA ANNUNCIATA,Visibility & information,"All'inizio del turno bianco viene indicato il nemico più vicino a una guardia, che agirà se avrà una mossa legale.",5,19,5-19,Misto,enemy.actorMode=AnnouncedNearest
 207,LAW #207,DOVE SONO I MIEI OCCHIALI?,Visibility & information,"I nemici lontani appaiono come simboli ""?"" finché non sono entro 4 righe.",4,18,4-18,Malus,enemy.revealTypeDistance=4
 208,LAW #208,LATE IDENTITY,Visibility & information,Il tipo del nemico viene rivelato solo entro 2 righe.,8,16,8-16,Malus,enemy.revealTypeDistance=2
-209,LAW #209,PORTATA VISIBILE,Visibility & information,"Quando selezioni un nemico, mostra la sua portata massima con un bordo sottile.",2,16,2-16,Bonus,ui.enemyRangeOnSelect=true
+209,LAW #209,Boom!,Board hazard,"All'inizio del livello appare una casella a caso con un numero in magenta che parte da 5 e diminuisce ad ogni mossa delle Guardie. Quando arriva a zero, la casella esplode, elimina qualsiasi pezzo presente e diventa inutilizzabile. Subito dopo appare una nuova casella con lo stesso effetto.",2,16,2-16,Malus,tiles.boomCountdown=5
 210,LAW #210,PASSO SOTTO GLI OCCHI,Visibility & information,La casella di partenza di ogni nemico resta marcata per tutto il livello.,3,10,3-10,Bonus,ui.markEnemyStartTiles=true
 211,LAW #211,INDIZIO DI MOSSA,Visibility & information,Una volta ogni 5 turni evidenzia per un istante una mossa legale casuale.,2,16,2-16,Bonus,ui.hintInterval=5
 212,LAW #212,RALLENTARE,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 5 caselle.,2,16,2-16,Bonus,enemy.rook.maxRange=5;enemy.bishop.maxRange=5

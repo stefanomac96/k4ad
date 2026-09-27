@@ -342,8 +342,8 @@ law.123.name,PAUSA FRA CATTURE
 law.123.description,"Dopo un attacco, quel nemico non può attaccare nella risposta successiva."
 law.124.name,LUNGA VISTA
 law.124.description,Tutti i pezzi a gittata riducono la portata di 5.
-law.125.name,VISTA CORTA
-law.125.description,"Tutti i pezzi a gittata riducono la portata di 1, minimo 1."
+law.125.name,METAMORFOSI
+law.125.description,"Ogni 15 movimenti delle guardie, un pezzo nemico Pedone a caso si trasforma in Cavallo."
 law.126.name,TERRA DEI CAVALLI
 law.126.description,Aumenta fortemente il peso di generazione dei Cavalli.
 law.127.name,TERRA DEGLI ALFIERI
@@ -510,8 +510,8 @@ law.207.name,DOVE SONO I MIEI OCCHIALI?
 law.207.description,"I nemici lontani appaiono come simboli ""?"" finché non sono entro 4 righe."
 law.208.name,IDENTITÀ TARDIVA
 law.208.description,Il tipo del nemico viene rivelato solo entro 2 righe.
-law.209.name,PORTATA VISIBILE
-law.209.description,"Quando selezioni un nemico, mostra la sua portata massima con un bordo sottile."
+law.209.name,Boom!
+law.209.description,"All'inizio del livello appare una casella a caso con un numero in magenta che parte da 5 e diminuisce ad ogni mossa delle Guardie. Quando arriva a zero, la casella esplode, elimina qualsiasi pezzo presente e diventa inutilizzabile. Subito dopo appare una nuova casella con lo stesso effetto."
 law.210.name,PASSO SOTTO GLI OCCHI
 law.210.description,La casella di partenza di ogni nemico resta marcata per tutto il livello.
 law.211.name,INDIZIO DI MOSSA
@@ -808,3 +808,4 @@ achievement.020.description,Raggiungi il livello 50 in Modalità Infinita.
 achievement.021.name,Scacchiera di platino
 achievement.021.description,Sblocca tutti gli obiettivi.
 achievement.unlocked,OBIETTIVO SBLOCCATO:
+law.runtime.metamorphosisCountdown,Metamorfosi: {0}
