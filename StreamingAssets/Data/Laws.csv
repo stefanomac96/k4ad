@@ -20,7 +20,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 19,LAW #019,SALTA LA FILA,Guard movement,Una volta per guardia è possibile saltare un pezzo adiacente e atterrare nella casella immediatamente oltre.,6,20,6-20,Bonus,guard.jumpAdjacentCharges=1
 20,LAW #020,RACCOMANDAZIONE REALE,Turn flow,"Quando una guardia raggiunge il checkpoint reticolato, il giocatore può continuare a giocare per cinque turni consecutivi.",3,17,3-17,Bonus,checkpoint.freePlayerMovesOnCross=5
 21,LAW #021,DISTANZA DAL NEMICO,Guard movement,Una mossa senza cattura non può terminare adiacente a un nemico.,2,8,2-8,Malus,guard.quietMoveAvoidEnemyAdjacency=true
-22,LAW #022,DOPPIO SALTO FINALE,Guard movement,"Dalla penultima riga precedente al checkpoint, una guardia può andare al checkpoint con una mossa sola se ha strada libera.",5,19,5-19,Bonus,guard.finalLeap=true
+22,LAW #022,OH-OH CAVALLO,Enemy movement,I Cavalli nemici non possono terminare la loro mossa su una casella bianca.,5,19,5-19,Bonus,enemy.knight.blackSquaresOnly=true
 23,LAW #023,COLONNA LASCIATA,Guard movement,"Dopo un cambio di colonna, una guardia non può tornare subito alla colonna precedente.",5,13,5-13,Malus,guard.blockReturnToPreviousColumn=true
 24,LAW #024,SHORT REIGN,Guard movement,"Dopo 3 mosse della stessa guardia, deve essere scelta un'altra guardia prima di riutilizzarla.",3,10,3-10,Malus,guard.maxConsecutiveUses=3
 25,LAW #025,FREE KING,Guard movement,Una volta per livello puoi muovere una guardia di 2 caselle in qualunque direzione ignorando il primo ostacolo non nemico.,10,20,10-20,Bonus,guard.freeKingCharge=1
@@ -209,7 +209,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 208,LAW #208,LATE IDENTITY,Visibility & information,Il tipo del nemico viene rivelato solo entro 2 righe.,8,16,8-16,Malus,enemy.revealTypeDistance=2
 209,LAW #209,Boom!,Board hazard,"All'inizio del livello appare una casella a caso con un numero in magenta che parte da 5 e diminuisce ad ogni mossa delle Guardie. Quando arriva a zero, la casella esplode, elimina qualsiasi pezzo presente e diventa inutilizzabile. Subito dopo appare una nuova casella con lo stesso effetto.",2,16,2-16,Malus,tiles.boomCountdown=5
 210,LAW #210,PASSO SOTTO GLI OCCHI,Visibility & information,La casella di partenza di ogni nemico resta marcata per tutto il livello.,3,10,3-10,Bonus,ui.markEnemyStartTiles=true
-211,LAW #211,INDIZIO DI MOSSA,Visibility & information,Una volta ogni 5 turni evidenzia per un istante una mossa legale casuale.,2,16,2-16,Bonus,ui.hintInterval=5
+211,LAW #211,LA CASA NERA,Enemy capture,I Pedoni nemici non possono catturare una Guardia che si trova su una casella nera.,2,16,2-16,Bonus,enemy.pawn.cannotCaptureGuardOnBlack=true
 212,LAW #212,RALLENTARE,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 5 caselle.,2,16,2-16,Bonus,enemy.rook.maxRange=5;enemy.bishop.maxRange=5
 213,LAW #213,CONTA CATTURE,Visibility & information,Accanto a ogni guardia viene mostrato il numero delle sue catture nel livello.,2,8,2-8,Bonus,ui.showGuardCaptureCounts=true
 214,LAW #214,CONTA MOSSE,Visibility & information,Accanto a ogni guardia viene mostrato il numero delle sue mosse nel livello.,3,10,3-10,Bonus,ui.showGuardMoveCounts=true

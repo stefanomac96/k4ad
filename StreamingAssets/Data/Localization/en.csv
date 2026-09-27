@@ -8,6 +8,14 @@ menu.exit,Exit
 mode.title,Choose Your Journey
 mode.campaign,Campaign Mode
 mode.endless,Endless Mode
+difficulty.title,DIFFICULTY
+difficulty.beginner,Beginner
+difficulty.beginner.description,"Fewer enemies, the Guards are automatically restored to 4 after each level, and achievements cannot be unlocked."
+difficulty.normal,Normal
+difficulty.normal.description,"The standard gameplay experience."
+difficulty.grandmaster,Grandmaster
+difficulty.grandmaster.description,"Same balance as Normal, but the game starts with only one Guard."
+difficulty.grandmaster.locked,Grandmaster difficulty is unlocked only after\nsuccessfully completing Campaign Mode on Normal difficulty.
 back,Back
 resume,Resume
 menu,Main Menu
@@ -140,8 +148,8 @@ law.020.name,ROYAL RECOMMENDATION
 law.020.description,"When a guard reaches the checkered checkpoint, the player may keep playing for five consecutive turns."
 law.021.name,KEEP YOUR DISTANCE
 law.021.description,A non-capturing move cannot end adjacent to an enemy.
-law.022.name,DOUBLE FINAL LEAP
-law.022.description,"From the second-to-last row before the checkpoint, a guard can reach the checkpoint in a single move if the path is clear."
+law.022.name,BLACK KNIGHT
+law.022.description,Enemy Knights cannot end their move on a white square.
 law.023.name,LEFT COLUMN
 law.023.description,"After changing columns, a guard cannot immediately return to its previous column."
 law.024.name,SHORT REIGN
@@ -518,8 +526,8 @@ law.209.name,Boom!
 law.209.description,"At the start of the level, a random tile appears with a magenta number starting at 5 and decreasing after every Guard move. When it reaches zero, the tile explodes, removes any piece on it, and becomes unusable. A new tile with the same effect then appears."
 law.210.name,STEP IN PLAIN SIGHT
 law.210.description,Each enemy's starting square remains marked for the entire level.
-law.211.name,NEXT MOVE HINT
-law.211.description,"Once every 5 turns, a random legal move is briefly highlighted."
+law.211.name,THE BLACK HOUSE
+law.211.description,Enemy Pawns cannot capture a Guard standing on a black square.
 law.212.name,SLOW DOWN
 law.212.description,Rooks and Bishops can move only up to a maximum distance of 5 squares.
 law.213.name,CAPTURE COUNT
@@ -762,6 +770,7 @@ law.runtime.rowsToGate,Rows to gate: {0}
 law.runtime.threats,Guard #{0} · Threats: {1}
 law.runtime.freeCaptures,Free captures: {0}
 options.gameplay,Gameplay
+options.difficulty,Difficulty
 options.chessboardSize,Chessboard size
 options.chessboard.default,Small
 options.chessboard.big,Medium
@@ -814,3 +823,4 @@ achievement.021.name,Platinum Chessboard
 achievement.021.description,Unlock all achievements.
 achievement.unlocked,ACHIEVEMENT UNLOCKED:
 law.runtime.metamorphosisCountdown,Metamorphosis: {0}
+law.runtime.countdown,Countdown: {0}

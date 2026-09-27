@@ -8,6 +8,14 @@ menu.exit,Esci
 mode.title,Scegli il viaggio
 mode.campaign,Modalità Campagna
 mode.endless,Modalità Infinita
+difficulty.title,DIFFICOLTÀ
+difficulty.beginner,Principiante
+difficulty.beginner.description,"Meno nemici, dopo ogni livello le Guardie tornano automaticamente a 4 e gli obiettivi non vengono sbloccati."
+difficulty.normal,Normale
+difficulty.normal.description,"L'esperienza di gioco standard."
+difficulty.grandmaster,Gran Maestro
+difficulty.grandmaster.description,"Stesso bilanciamento di Normale, ma la partita comincia con una sola Guardia."
+difficulty.grandmaster.locked,La difficoltà Gran Maestro si sblocca solo dopo aver\nterminato con successo la Modalità Campagna a difficoltà Normale.
 back,Indietro
 resume,Riprendi
 menu,Menu Principale
@@ -136,8 +144,8 @@ law.020.name,RACCOMANDAZIONE REALE
 law.020.description,"Quando una guardia raggiunge il checkpoint reticolato, il giocatore può continuare a giocare per cinque turni consecutivi."
 law.021.name,DISTANZA DAL NEMICO
 law.021.description,Una mossa senza cattura non può terminare adiacente a un nemico.
-law.022.name,DOPPIO SALTO FINALE
-law.022.description,"Dalla penultima riga precedente al checkpoint, una guardia può andare al checkpoint con una mossa sola se ha strada libera."
+law.022.name,OH-OH CAVALLO
+law.022.description,I Cavalli nemici non possono terminare la loro mossa su una casella bianca.
 law.023.name,COLONNA LASCIATA
 law.023.description,"Dopo un cambio di colonna, una guardia non può tornare subito alla colonna precedente."
 law.024.name,REGNO BREVE
@@ -514,8 +522,8 @@ law.209.name,Boom!
 law.209.description,"All'inizio del livello appare una casella a caso con un numero in magenta che parte da 5 e diminuisce ad ogni mossa delle Guardie. Quando arriva a zero, la casella esplode, elimina qualsiasi pezzo presente e diventa inutilizzabile. Subito dopo appare una nuova casella con lo stesso effetto."
 law.210.name,PASSO SOTTO GLI OCCHI
 law.210.description,La casella di partenza di ogni nemico resta marcata per tutto il livello.
-law.211.name,INDIZIO DI MOSSA
-law.211.description,Una volta ogni 5 turni evidenzia per un istante una mossa legale casuale.
+law.211.name,LA CASA NERA
+law.211.description,I Pedoni nemici non possono catturare una Guardia che si trova su una casella nera.
 law.212.name,RALLENTARE
 law.212.description,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 5 caselle.
 law.213.name,CONTA CATTURE
@@ -757,6 +765,7 @@ law.runtime.rowsToGate,Righe al varco: {0}
 law.runtime.threats,Guardia #{0} · Minacce: {1}
 law.runtime.freeCaptures,Catture gratuite: {0}
 options.gameplay,Gioco
+options.difficulty,Difficoltà
 options.chessboardSize,Dimensioni della scacchiera
 options.chessboard.default,Piccola
 options.chessboard.big,Media
@@ -809,3 +818,4 @@ achievement.021.name,Scacchiera di platino
 achievement.021.description,Sblocca tutti gli obiettivi.
 achievement.unlocked,OBIETTIVO SBLOCCATO:
 law.runtime.metamorphosisCountdown,Metamorfosi: {0}
+law.runtime.countdown,Contatore: {0}
