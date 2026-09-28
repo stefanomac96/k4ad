@@ -43,8 +43,8 @@ di Bitstream
 ------
 
 ASSETS AGGIUNTIVI:
-Vettori da Freepik.com, successivamente
-pixellate utilizzando ResizePixel.com
+Vettori da Freepik.com e
+pixellati con ResizePixel.com
 
 Cursori del mouse da Itch.io
 

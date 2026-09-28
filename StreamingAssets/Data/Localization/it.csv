@@ -768,9 +768,9 @@ law.runtime.freeCaptures,Catture gratuite: {0}
 options.gameplay,Gioco
 options.difficulty,Difficoltà
 options.chessboardSize,Dimensioni della scacchiera
-options.chessboard.default,Piccola
+options.chessboard.default,Grande
 options.chessboard.big,Media
-options.chessboard.veryBig,Grande
+options.chessboard.veryBig,Piccola
 options.fastCheckpoint,Checkpoint veloce
 extra.achievements,Obiettivi
 achievements.title,Obiettivi

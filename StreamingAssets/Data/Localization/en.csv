@@ -773,9 +773,9 @@ law.runtime.freeCaptures,Free captures: {0}
 options.gameplay,Gameplay
 options.difficulty,Difficulty
 options.chessboardSize,Chessboard size
-options.chessboard.default,Small
+options.chessboard.default,Big
 options.chessboard.big,Medium
-options.chessboard.veryBig,Big
+options.chessboard.veryBig,Small
 options.fastCheckpoint,Fast checkpoint
 extra.achievements,Achievements
 achievements.title,Achievements
