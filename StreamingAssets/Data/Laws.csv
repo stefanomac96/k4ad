@@ -82,7 +82,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 81,LAW #081,SLEEPY BISHOPS,Enemy movement,Gli Alfieri si muovono solo ogni 2 risposte nemiche.,3,9,3-9,Bonus,enemy.bishop.moveInterval=2
 82,LAW #082,SLEEPY ROOKS,Enemy movement,Le Torri si muovono solo ogni 2 risposte nemiche.,3,9,3-9,Bonus,enemy.rook.moveInterval=2
 83,LAW #083,CAVALLI CACCIATORI,Enemy movement,I Cavalli preferiscono la mossa legale che li avvicina alla guardia più vicina.,5,19,5-19,Malus,enemy.knight.ai=ChaseNearest
-84,LAW #084,Alzati e cammina!,Guard formation & survival,Fai tornare in vita una guardia posizionandoti nella casella indicata. La guardia risorta comincerà il livello dalla partenza.,3,17,3-17,Bonus,tiles.reviveGuardCount=1
+84,LAW #084,Alzati e cammina!,Guard formation & survival,Fai tornare in vita una guardia posizionandoti nella casella indicata. La guardia risorta comincerà il livello dalla partenza.,3,17,3-17,Bonus,tiles.revivePerMissingGuard=1
 85,LAW #085,HUNTING BISHOPS,Enemy movement,Gli Alfieri preferiscono muoversi verso la guardia più vicina.,7,15,7-15,Malus,enemy.bishop.ai=ChaseNearest
 86,LAW #086,HUNTING ROOKS,Enemy movement,Le Torri preferiscono muoversi verso la guardia più vicina.,7,15,7-15,Malus,enemy.rook.ai=ChaseNearest
 87,LAW #087,RANDOM KNIGHTS,Enemy movement,I Cavalli scelgono casualmente una mossa legale.,2,9,2-9,Misto,enemy.knight.ai=RandomLegal
@@ -176,7 +176,7 @@ ID,LAW,Name,Category,Effect,Min Level,Max Level,Range,Impact,Implementation
 175,LAW #175,ROYAL AVENUE,Road generation,"Strada larga e relativamente dritta, ma con +25% nemici.",8,18,8-18,Misto,road.preset=RoyalAvenue
 176,LAW #176,USCITA IN DIAGONALE,Tiles & checkpoint,Le guardie possono entrare nel checkpoint soltanto con una mossa diagonale.,2,16,2-16,Malus,checkpoint.entryAxis=Diagonal
 177,LAW #177,NARROW CHECKPOINT,Tiles & checkpoint,Solo le 3 caselle centrali del reticolo sono valide per il passaggio.,4,11,4-11,Malus,checkpoint.validWidth=3
-178,LAW #178,VARCO UNICO,Tiles & checkpoint,"Una sola casella del reticolo, indicata in ciano, consente il passaggio.",8,20,8-20,Malus,checkpoint.validWidth=1
+178,LAW #178,Teletrasporto,Tiles & movement,"Se entri in una casella magenta, uscirai dalla casella ciano con lo stesso numero, e viceversa. Tuttavia, il passaggio è possibile solo se le due caselle non sono entrambe occupate.",8,20,8-20,Bonus,tiles.portalPairs=10
 179,LAW #179,VARCO MOBILE,Tiles & checkpoint,La casella valida del checkpoint si sposta di una colonna ogni 2 turni.,10,20,10-20,Malus,checkpoint.movingGateInterval=2
 180,LAW #180,SAFE ROW,Tiles & checkpoint,La riga immediatamente prima del checkpoint non può essere attaccata.,2,7,2-7,Bonus,checkpoint.safeApproachRows=1
 181,LAW #181,DANGEROUS ROW,Tiles & checkpoint,La riga immediatamente prima del checkpoint aumenta di 1 la portata dei nemici che la minacciano.,7,16,7-16,Malus,checkpoint.approachEnemyRangeDelta=+1

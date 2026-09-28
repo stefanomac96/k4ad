@@ -1,11 +1,14 @@
 A GAME BY:
-stefanomac96
-
-PUBLISHED BY:
 Stelex Software
 
-MUSIC & SFX:
+------
 
+ILLUSTRATIONS:
+Mash D
+
+------
+
+MUSIC & SFX:
 From Pixabay.com
 
 "New Bark Morning Light"
@@ -23,7 +26,10 @@ by 331music
 "Game Over"
 by HeXXeL
 
+------
+
 FONTS:
+From Dafont.com
 
 "Alkhemikal"
 by jeti
@@ -34,21 +40,15 @@ by rurr
 "DejaVu Sans Mono"
 by Bitstream
 
-SPRITES:
+------
 
-From Itch.io
+ADDITIONAL ASSETS:
+Vectors from Freepik.com, then
+pixelated using ResizePixel.com
 
-"Urizen 1Bit Tileset"
-by vurmux
+Mouse cursors from Itch.io
 
-"The Roguelike 1-Bit"
-by Backterria
-
-FULLSCREEN ILLUSTRATIONS:
-
-The illustrations were generated
-TEMPORARILY and exclusively for
-the PROTOTYPE using AI.
+------
 
 Copyright (c) 2026
 All rights reserved

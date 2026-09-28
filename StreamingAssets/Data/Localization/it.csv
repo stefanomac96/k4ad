@@ -12,7 +12,7 @@ difficulty.title,DIFFICOLTÀ
 difficulty.beginner,Principiante
 difficulty.beginner.description,"Meno nemici, dopo ogni livello le Guardie tornano automaticamente a 4 e gli obiettivi non vengono sbloccati."
 difficulty.normal,Normale
-difficulty.normal.description,"L'esperienza di gioco standard."
+difficulty.normal.description,L'esperienza di gioco standard.
 difficulty.grandmaster,Gran Maestro
 difficulty.grandmaster.description,"Stesso bilanciamento di Normale, ma la partita comincia con una sola Guardia."
 difficulty.grandmaster.locked,La difficoltà Gran Maestro si sblocca solo dopo aver\nterminato con successo la Modalità Campagna a difficoltà Normale.
@@ -456,8 +456,8 @@ law.176.name,USCITA IN DIAGONALE
 law.176.description,Le guardie possono entrare nel checkpoint soltanto con una mossa diagonale.
 law.177.name,USCITA STRETTA
 law.177.description,Solo le 3 caselle centrali del reticolo sono valide per il passaggio.
-law.178.name,VARCO UNICO
-law.178.description,"Una sola casella del reticolo, indicata in ciano, consente il passaggio."
+law.178.name,Teletrasporto
+law.178.description,"Se entri in una casella magenta, uscirai dalla casella ciano con lo stesso numero, e viceversa. Tuttavia, il passaggio è possibile solo se le due caselle non sono entrambe occupate."
 law.179.name,VARCO MOBILE
 law.179.description,La casella valida del checkpoint si sposta di una colonna ogni 2 turni.
 law.180.name,RIGA SICURA
@@ -745,6 +745,7 @@ pause.mainmenu,Torna al menu principale
 law.999.name,Fino all'ultima mossa!
 law.999.description,"Dopo ogni turno completo, la Guardia Reale e la Regina nemica vengono trasformate in un pezzo degli scacchi a caso."
 options.scanlines,Scanlines
+options.mouseCursor,Cursore del mouse
 pause.exit.title,Uscire dalla partita?
 pause.exit.warning,"Vuoi veramente uscire dalla partita?
 La partita non viene salvata."
@@ -819,3 +820,5 @@ achievement.021.description,Sblocca tutti gli obiettivi.
 achievement.unlocked,OBIETTIVO SBLOCCATO:
 law.runtime.metamorphosisCountdown,Metamorfosi: {0}
 law.runtime.countdown,Contatore: {0}
+law.998.name,Intervento dall'alto!
+law.998.description,Resuscita tutte le tue Guardie morte.

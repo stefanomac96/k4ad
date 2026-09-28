@@ -12,7 +12,7 @@ difficulty.title,DIFFICULTY
 difficulty.beginner,Beginner
 difficulty.beginner.description,"Fewer enemies, the Guards are automatically restored to 4 after each level, and achievements cannot be unlocked."
 difficulty.normal,Normal
-difficulty.normal.description,"The standard gameplay experience."
+difficulty.normal.description,The standard gameplay experience.
 difficulty.grandmaster,Grandmaster
 difficulty.grandmaster.description,"Same balance as Normal, but the game starts with only one Guard."
 difficulty.grandmaster.locked,Grandmaster difficulty is unlocked only after\nsuccessfully completing Campaign Mode on Normal difficulty.
@@ -272,7 +272,7 @@ law.082.name,SLEEPY ROOKS
 law.082.description,Rooks move only on every second enemy response.
 law.083.name,HUNTING KNIGHTS
 law.083.description,Knights prefer the legal move that brings them closer to the nearest guard.
-law.084.name,Rise From Your Grave!
+law.084.name,Lend a hand
 law.084.description,Bring a guard back to life by moving onto the indicated square. The resurrected guard will start from the starting row.
 law.085.name,HUNTING BISHOPS
 law.085.description,Bishops prefer to move toward the nearest guard.
@@ -460,8 +460,8 @@ law.176.name,DIAGONAL EXIT
 law.176.description,Guards can enter the checkpoint only with a diagonal move.
 law.177.name,NARROW CHECKPOINT
 law.177.description,Only the 3 central squares of the checkered row are valid for crossing.
-law.178.name,SINGLE GATE
-law.178.description,"Only one square of the checkered row, shown in cyan, allows passage."
+law.178.name,Portals
+law.178.description,"If you enter a magenta square, you will exit from the cyan square with the same number, and vice versa. However, teleportation is possible only if the two squares are not both occupied."
 law.179.name,MOVING GATE
 law.179.description,The valid checkpoint square shifts by one column every 2 turns.
 law.180.name,SAFE ROW
@@ -750,6 +750,7 @@ pause.mainmenu,Return to main menu
 law.999.name,UNTIL THE VERY LAST MOVE!
 law.999.description,"After every full turn, the Royal Guard and the enemy Queen are transformed into a random chess piece."
 options.scanlines,Scanlines
+options.mouseCursor,Mouse Cursor
 pause.exit.title,Leave the game?
 pause.exit.warning,"Do you really want to leave the game?
 The game will not be saved."
@@ -824,3 +825,5 @@ achievement.021.description,Unlock all achievements.
 achievement.unlocked,ACHIEVEMENT UNLOCKED:
 law.runtime.metamorphosisCountdown,Metamorphosis: {0}
 law.runtime.countdown,Countdown: {0}
+law.998.name,Rise from your grave!
+law.998.description,Revive all your dead Guards.
