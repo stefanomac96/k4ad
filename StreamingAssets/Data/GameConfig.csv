@@ -35,7 +35,7 @@ ui.white,EEEEEE
 ui.cyan,4BFCF9
 ui.magenta,DA02F8
 laws.cooldown,5
-laws.count,120
+laws.count,115
 boss.size,6
 boss.promotions,Rook|Bishop|Knight|King
 seed.fixed,0
