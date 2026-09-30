@@ -408,6 +408,7 @@ options.chessboardSize,Chessboard size
 options.chessboard.default,Big
 options.chessboard.big,Medium
 options.chessboard.veryBig,Small
+options.chessboard.random,Random
 options.fastCheckpoint,Fast checkpoint
 extra.achievements,Achievements
 achievements.title,Achievements

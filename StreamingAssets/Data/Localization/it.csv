@@ -403,6 +403,7 @@ options.chessboardSize,Dimensioni della scacchiera
 options.chessboard.default,Grande
 options.chessboard.big,Media
 options.chessboard.veryBig,Piccola
+options.chessboard.random,Casuale
 options.fastCheckpoint,Checkpoint veloce
 extra.achievements,Obiettivi
 achievements.title,Obiettivi
