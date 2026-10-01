@@ -191,11 +191,11 @@ law.074.description,Genera 2 restringimenti di una riga ciascuno.
 law.075.name,PIAZZE APERTE
 law.075.description,Genera 2 allargamenti temporanei della strada.
 law.076.name,SCALINATA
-law.076.description,La strada si sposta lateralmente di una colonna a intervalli regolari.
+law.076.description,"Durante la generazione, la strada si sposta lateralmente di una colonna a intervalli regolari."
 law.077.name,CURVA A S
 law.077.description,Forza una grande curva a S nel livello.
-law.078.name,CENTRO SPEZZATO
-law.078.description,La linea centrale della strada cambia improvvisamente una volta.
+law.078.name,Cavallo in doppio petto
+law.078.description,La prima guardia che muoverai verrà trasformata in un cavallo per tutto il livello.
 law.079.name,USCITA IN DIAGONALE
 law.079.description,Le guardie possono entrare nel checkpoint soltanto con una mossa diagonale.
 law.080.name,Teletrasporto
@@ -293,8 +293,11 @@ intro,"IL RE È STATO RAPITO.
 IL REGNO BIANCO È SOTTO SCACCO.
 RESTANO QUATTRO PEDONI PER SALVARLO.
 UNA MOSSA ALLA VOLTA."
-cutscene.intro.kingMissing,Il Re è stato rapito!\nIl regno bianco è sotto scacco!
-cutscene.intro.departure,Restano quattro pedoni per salvarlo...\nUna mossa alla volta!
+cutscene.intro.herald,"Udite, udite!"
+cutscene.intro.kingMissing,"Una terribile sciagura ha colpito il Regno Bianco!\nIl Re Bianco è scomparso, rapito dalla Regina Nera."
+cutscene.intro.kingOath,"Mentre la paura si diffonde tra i sudditi, quattro\numili pedoni, le più fedeli guardie del Re, giurano\ndi riportare il loro sovrano a casa."
+cutscene.intro.departure,"Attraverso strade fatte di caselle bianche e nere\ne di regole in continuo mutamento, i quattro fedeli\npedoni iniziano la loro missione."
+cutscene.intro.destination,Oltre l'orizzonte si erge il castello della Regina Nera.\nIl loro viaggio comincia adesso!
 cutscene.midway,Siamo a metà strada...\nStiamo arrivando!
 cutscene.finalDuel,Il tuo regno è finito!\nViva il re!
 start,ENTRA NEL REGNO
@@ -455,9 +458,9 @@ achievement.017.description,Sconfiggi la Regina quando ti è rimasta una sola Gu
 achievement.018.name,Il viaggio continua
 achievement.018.description,Gioca per la prima volta in Modalità Infinita.
 achievement.019.name,Oltre il regno
-achievement.019.description,Raggiungi il livello 25 in Modalità Infinita.
+achievement.019.description,Raggiungi il livello 10 in Modalità Infinita.
 achievement.020.name,Non finisce mai
-achievement.020.description,Raggiungi il livello 50 in Modalità Infinita.
+achievement.020.description,Raggiungi il livello 20 in Modalità Infinita.
 achievement.021.name,Scacchiera di platino
 achievement.021.description,Sblocca tutti gli obiettivi.
 achievement.unlocked,OBIETTIVO SBLOCCATO:

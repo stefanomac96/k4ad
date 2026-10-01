@@ -74,15 +74,15 @@
 73,LAW #073,SERPENTINA,Road generation,La strada tende ad alternare curve a sinistra e destra.,6,20,6-20,Malus,road.pattern=AlternatingCurves
 74,LAW #074,DUE STRETTOIE,Road generation,Genera 2 restringimenti di una riga ciascuno.,5,19,5-19,Malus,road.bottleneckCount=2
 75,LAW #075,PIAZZE APERTE,Road generation,Genera 2 allargamenti temporanei della strada.,3,17,3-17,Bonus,road.plazaCount=2
-76,LAW #076,SCALINATA,Road generation,La strada si sposta lateralmente di una colonna a intervalli regolari.,4,18,4-18,Misto,road.pattern=Staircase
+76,LAW #076,SCALINATA,Road generation,"Durante la generazione, la strada si sposta lateralmente di una colonna a intervalli regolari.",4,18,4-18,Misto,road.pattern=Staircase
 77,LAW #077,CURVA A S,Road generation,Forza una grande curva a S nel livello.,5,19,5-19,Misto,road.pattern=SCurve
-78,LAW #078,CENTRO SPEZZATO,Road generation,La linea centrale della strada cambia improvvisamente una volta.,6,20,6-20,Malus,road.centerJumpCount=1
+78,LAW #078,Cavallo in doppio petto,Road generation,La prima guardia che muoverai verrà trasformata in un cavallo per tutto il livello.,6,20,6-20,Malus,guard.firstMovedKnight=1
 79,LAW #079,USCITA IN DIAGONALE,Tiles & checkpoint,Le guardie possono entrare nel checkpoint soltanto con una mossa diagonale.,2,16,2-16,Malus,checkpoint.entryAxis=Diagonal
 80,LAW #080,Teletrasporto,Tiles & movement,"Se entri in una casella magenta, uscirai dalla casella ciano con lo stesso numero, e viceversa. Tuttavia, il passaggio è possibile solo se le due caselle non sono entrambe occupate.",8,20,8-20,Bonus,tiles.portalPairs=10
 81,LAW #081,VARCO MOBILE,Tiles & checkpoint,La casella valida del checkpoint si sposta di una colonna ogni 2 turni.,10,20,10-20,Malus,checkpoint.movingGateInterval=2
 82,LAW #082,CRISI D'IDENTITÀ,Guard movement,"In questo livello, le Guardie si muovono come cavalli.",3,17,3-17,Misto,guard.identityCrisisKnight=true
 83,LAW #083,CASELLE SICURE,Tiles & checkpoint,15 caselle magenta casuali proteggono dalle catture le guardie che le occupano.,2,16,2-16,Bonus,tiles.safeTileCount=15
-84,LAW #084,BLOCCHI MAGENTA,Tiles & checkpoint,Genera 10 caselle magenta invalicabili sulla strada.,4,18,4-18,Malus,tiles.blockedCount=10
+84,LAW #084,BLOCCHI MAGENTA,Tiles & checkpoint,Genera 10 caselle viola invalicabili sulla strada.,4,18,4-18,Malus,tiles.blockedCount=10
 85,LAW #085,BLOCCO EVANESCENTE,Tiles & checkpoint,Quindici blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.,6,20,6-20,Misto,tiles.blockedCount=15;tiles.blockDecayInterval=4
 86,LAW #086,CASELLE A SENSO UNICO,Tiles & checkpoint,Le caselle marcate possono essere attraversate dalle guardie solo con movimenti diagonali.,5,19,5-19,Malus,tiles.oneWayCount=1;tiles.oneWayFullRow=true
 87,LAW #087,IMPRONTE DI CAVALLI,Tiles & checkpoint,"Tutte le caselle che sono state occupate da un cavallo, diventeranno inaccessibili quando quest'ultimo si muoverà da esse.",8,20,8-20,Malus,enemy.knightTrailBlocks=true
@@ -112,5 +112,5 @@
 111,LAW #111,PICCOLA GRAZIA,Combined laws,"Strada -1 colonna, ma il primo colpo alla squadra viene ignorato.",3,17,3-17,Misto,combo=RoadMinus1+TeamShield1
 112,LAW #112,CURVE SILENZIOSE,Combined laws,"Strada più tortuosa, ma i nemici rispondono solo ogni 2 mosse.",4,18,4-18,Misto,combo=Winding+ResponseEvery2
 113,LAW #113,PIEDI VELOCI,Combined laws,"Ogni guardia ha un Dash, ma non può essere scelta due volte di fila.",6,20,6-20,Misto,combo=PersonalDash1+NoRepeat
-114,LAW #114,CAMPO MINATO,Combined laws,"10 caselle bloccate, ma 10 caselle sicure magenta.",5,19,5-19,Misto,tiles.blockedCount=10;tiles.safeTileCount=10
+114,LAW #114,CAMPO MINATO,Combined laws,"10 caselle bloccate, ma 10 caselle sicure ciano.",5,19,5-19,Misto,tiles.blockedCount=10;tiles.safeTileCount=10
 115,LAW #115,BATTUTA DI CACCIA,Combined laws,"Nemici inseguono la guardia più vicina, ma si muovono solo a turni alterni.",8,20,8-20,Misto,combo=ChaseNearest+MoveEvery2

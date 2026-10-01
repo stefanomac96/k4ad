@@ -191,11 +191,11 @@ law.074.description,"Generates 2 bottlenecks, each one row long."
 law.075.name,OPEN PLAZAS
 law.075.description,Generates 2 temporary road widenings.
 law.076.name,STAIRCASE
-law.076.description,The road shifts sideways by one column at regular intervals.
+law.076.description,"During generation, the road shifts sideways by one column at regular intervals."
 law.077.name,S CURVE
 law.077.description,Forces one large S-shaped bend in the level.
-law.078.name,BROKEN CENTER
-law.078.description,The road's center line shifts abruptly once.
+law.078.name,The Horse in the Gray Flannel Suit
+law.078.description,The first guard you move becomes a Knight for the rest of the level.
 law.079.name,DIAGONAL EXIT
 law.079.description,Guards can enter the checkpoint only with a diagonal move.
 law.080.name,Portals
@@ -293,10 +293,11 @@ intro,"THE KING HAS BEEN KIDNAPPED.
 THE WHITE KINGDOM IS IN CHECK.
 FOUR PAWNS REMAIN TO SAVE HIM.
 ONE MOVE AT A TIME."
-cutscene.intro.kingMissing,"The King has been kidnapped!
-The white kingdom is in check!"
-cutscene.intro.departure,"Four pawns remain to save him...
-One move at a time!"
+cutscene.intro.herald,"Hear ye, hear ye!"
+cutscene.intro.kingMissing,"Disaster has struck the White Kingdom.\nThe White King is gone, kidnapped\nby the forces of the Black Queen."
+cutscene.intro.kingOath,"As fear spreads through the empty throne room,\nfour humble pawns, the King's most loyal guards,\nswear they will bring their ruler home."
+cutscene.intro.departure,"Across a land of black-and-white squares\nand ever-changing rules, four loyal pawns\nbegin their quest."
+cutscene.intro.destination,Beyond the horizon lies the Black Queen's castle.\nTheir journey begins now!
 cutscene.midway,"We're halfway there...
 We're coming!"
 cutscene.finalDuel,"Your kingdom is finished!
@@ -460,9 +461,9 @@ achievement.017.description,Defeat the Queen with only one Guard remaining.
 achievement.018.name,The Journey Continues
 achievement.018.description,Play Endless Mode for the first time.
 achievement.019.name,Beyond the Kingdom
-achievement.019.description,Reach level 25 in Endless Mode.
+achievement.019.description,Reach level 10 in Endless Mode.
 achievement.020.name,It Never Ends
-achievement.020.description,Reach level 50 in Endless Mode.
+achievement.020.description,Reach level 20 in Endless Mode.
 achievement.021.name,Platinum Chessboard
 achievement.021.description,Unlock all achievements.
 achievement.unlocked,ACHIEVEMENT UNLOCKED:
