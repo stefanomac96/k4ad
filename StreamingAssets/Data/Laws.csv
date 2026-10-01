@@ -42,16 +42,16 @@
 41,LAW #041,CAVALLI IMMOBILI,Enemy movement,I Cavalli nemici restano immobili e non possono catturare.,2,16,2-16,Bonus,enemy.knight.canMove=false;enemy.knight.canCapture=false
 42,LAW #042,CAVALLI CACCIATORI,Enemy movement,I Cavalli preferiscono la mossa legale che li avvicina alla guardia più vicina.,5,19,5-19,Malus,enemy.knight.ai=ChaseNearest
 43,LAW #043,Alzati e cammina!,Guard formation & survival,Fai tornare in vita una guardia posizionandoti nella casella indicata. La guardia risorta comincerà il livello dalla partenza.,3,17,3-17,Bonus,tiles.revivePerMissingGuard=1
-44,LAW #044,ALFIERI IMPREVEDIBILI,Enemy movement,Gli Alfieri scelgono casualmente una mossa legale entro la loro portata.,4,18,4-18,Misto,enemy.bishop.ai=RandomLegal
+44,LAW #044,ALFIERI IMPREVEDIBILI,Enemy movement,Gli Alfieri scelgono casualmente una mossa legale entro la loro portata.,6,18,6-18,Misto,enemy.bishop.ai=RandomLegal
 45,LAW #045,NEMICI IN AVANTI,Enemy movement,I pezzi nemici mobili possono scegliere solo mosse che li avvicinano al bordo inferiore dello schermo.,5,19,5-19,Malus,enemy.directionBias=Down
 46,LAW #046,NEMICI IN RITIRATA,Enemy movement,I pezzi nemici mobili possono scegliere solo mosse che li allontanano dal bordo inferiore.,3,17,3-17,Bonus,enemy.directionBias=Up
 47,LAW #047,SETTORE ASSEGNATO,Enemy movement,I nemici devono restare nella metà sinistra o destra della griglia in cui iniziano il livello.,5,19,5-19,Bonus,enemy.lockInitialBoardHalf=true
-48,LAW #048,COLONNE VINCOLATE,Enemy movement,"Le Torri nemiche si muovono e catturano soltanto in diagonale, come gli Alfieri.",4,18,4-18,Bonus,enemy.rook.allowedAxis=Diagonal
+48,LAW #048,COLONNE VINCOLATE,Enemy movement,"Le Torri nemiche si muovono e catturano soltanto in diagonale, come gli Alfieri.",10,18,10-18,Bonus,enemy.rook.allowedAxis=Diagonal
 49,LAW #049,UN SOLO TIPO MOBILE,Enemy movement,Un solo tipo nemico estratto fra quelli presenti può muovere o catturare; tutti gli altri restano immobili.,5,19,5-19,Misto,enemy.randomMobileType=1
 50,LAW #050,CAMBIO DELLA GUARDIA,Enemy movement,L'avversario non può scegliere lo stesso pezzo in due risposte consecutive se un altro può muovere.,12,20,12-20,Bonus,enemy.blockRepeatActorWhenAlternative=true
 51,LAW #051,CAVALLI ORIZZONTALI,Enemy range & attacks,I Cavalli nemici possono saltare soltanto di due colonne e una riga.,2,16,2-16,Bonus,enemy.knight.allowedJump=Wide
-52,LAW #052,TORRI AFFAMATE,Enemy range & attacks,"Se una Torre può catturare, l'avversario deve scegliere una cattura di Torre.",6,20,6-20,Malus,enemy.priorityCaptureType=Rook
-53,LAW #053,CATTURA LONTANA,Enemy range & attacks,I nemici a lunga gittata non possono catturare a distanza di una casella.,3,17,3-17,Bonus,enemy.rangedCaptureMinDistance=2
+52,LAW #052,TORRI AFFAMATE,Enemy range & attacks,"Se una Torre può catturare, l'avversario deve scegliere una cattura di Torre.",10,20,10-20,Malus,enemy.priorityCaptureType=Rook
+53,LAW #053,CATTURA LONTANA,Enemy range & attacks,I nemici a lunga gittata non possono catturare a distanza di una casella.,6,17,6-17,Bonus,enemy.rangedCaptureMinDistance=2
 54,LAW #054,CATTURA VICINA,Enemy range & attacks,I nemici a lunga gittata possono catturare soltanto a distanza di una casella.,9,20,9-20,Bonus,enemy.rangedCaptureMaxDistance=1
 55,LAW #055,DOVE SONO I MIEI BINOCOLI?,Visibility & information,"I nemici lontani appaiono come simboli ""?"" o ""!"" finché non sono entro 6 righe.",2,16,2-16,Malus,enemy.revealThreatClassDistance=6
 56,LAW #056,PAUSA FRA CATTURE,Enemy range & attacks,"Dopo un attacco, quel nemico non può attaccare nella risposta successiva.",4,18,4-18,Bonus,enemy.attackCooldown=1
@@ -82,7 +82,7 @@
 81,LAW #081,VARCO MOBILE,Tiles & checkpoint,La casella valida del checkpoint si sposta di una colonna ogni 2 turni.,10,20,10-20,Malus,checkpoint.movingGateInterval=2
 82,LAW #082,CRISI D'IDENTITÀ,Guard movement,"In questo livello, le Guardie si muovono come cavalli.",3,17,3-17,Misto,guard.identityCrisisKnight=true
 83,LAW #083,CASELLE SICURE,Tiles & checkpoint,15 caselle magenta casuali proteggono dalle catture le guardie che le occupano.,2,16,2-16,Bonus,tiles.safeTileCount=15
-84,LAW #084,BLOCCHI MAGENTA,Tiles & checkpoint,Genera 10 caselle viola invalicabili sulla strada.,4,18,4-18,Malus,tiles.blockedCount=10
+84,LAW #084,BLOCCHI MAGENTA,Tiles & checkpoint,Genera 10 caselle magenta invalicabili sulla strada.,4,18,4-18,Malus,tiles.blockedCount=10
 85,LAW #085,BLOCCO EVANESCENTE,Tiles & checkpoint,Quindici blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.,6,20,6-20,Misto,tiles.blockedCount=15;tiles.blockDecayInterval=4
 86,LAW #086,CASELLE A SENSO UNICO,Tiles & checkpoint,Le caselle marcate possono essere attraversate dalle guardie solo con movimenti diagonali.,5,19,5-19,Malus,tiles.oneWayCount=1;tiles.oneWayFullRow=true
 87,LAW #087,IMPRONTE DI CAVALLI,Tiles & checkpoint,"Tutte le caselle che sono state occupate da un cavallo, diventeranno inaccessibili quando quest'ultimo si muoverà da esse.",8,20,8-20,Malus,enemy.knightTrailBlocks=true
@@ -91,8 +91,8 @@
 90,LAW #090,DOVE SONO I MIEI OCCHIALI?,Visibility & information,"I nemici lontani appaiono come simboli ""?"" finché non sono entro 4 righe.",4,18,4-18,Malus,enemy.revealTypeDistance=4
 91,LAW #091,Boom!,Board hazard,"All'inizio del livello appare una casella a caso con un numero in magenta che parte da 5 e diminuisce ad ogni mossa delle Guardie. Quando arriva a zero, la casella esplode, elimina qualsiasi pezzo presente e diventa inutilizzabile. Subito dopo appare una nuova casella con lo stesso effetto.",2,16,2-16,Malus,tiles.boomCountdown=5
 92,LAW #092,LA CASA NERA,Enemy capture,I Pedoni nemici non possono catturare una Guardia che si trova su una casella nera.,2,16,2-16,Bonus,enemy.pawn.cannotCaptureGuardOnBlack=true
-93,LAW #093,RALLENTARE,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 5 caselle.,2,16,2-16,Bonus,enemy.rook.maxRange=5;enemy.bishop.maxRange=5
-94,LAW #094,ADAGIO ADAGIO,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 2 caselle.,2,16,2-16,Bonus,enemy.rook.maxRange=2;enemy.bishop.maxRange=2
+93,LAW #093,RALLENTARE,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 5 caselle.,6,16,6-16,Bonus,enemy.rook.maxRange=5;enemy.bishop.maxRange=5
+94,LAW #094,ADAGIO ADAGIO,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 2 caselle.,6,16,6-16,Bonus,enemy.rook.maxRange=2;enemy.bishop.maxRange=2
 95,LAW #095,FRENATA,Enemy range & attacks,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 1 casella.,8,20,8-20,Bonus,enemy.rook.maxRange=1;enemy.bishop.maxRange=1
 96,LAW #096,CATTURA LIBERA,Capture & occupancy,La prima cattura del livello non provoca risposta nemica.,2,16,2-16,Bonus,capture.freeResponses=1
 97,LAW #097,CATTURA RUMOROSA,Capture & occupancy,Ogni cattura provoca una risposta nemica extra.,7,20,7-20,Malus,capture.extraEnemyResponse=1
@@ -112,5 +112,5 @@
 111,LAW #111,PICCOLA GRAZIA,Combined laws,"Strada -1 colonna, ma il primo colpo alla squadra viene ignorato.",3,17,3-17,Misto,combo=RoadMinus1+TeamShield1
 112,LAW #112,CURVE SILENZIOSE,Combined laws,"Strada più tortuosa, ma i nemici rispondono solo ogni 2 mosse.",4,18,4-18,Misto,combo=Winding+ResponseEvery2
 113,LAW #113,PIEDI VELOCI,Combined laws,"Ogni guardia ha un Dash, ma non può essere scelta due volte di fila.",6,20,6-20,Misto,combo=PersonalDash1+NoRepeat
-114,LAW #114,CAMPO MINATO,Combined laws,"10 caselle bloccate, ma 10 caselle sicure ciano.",5,19,5-19,Misto,tiles.blockedCount=10;tiles.safeTileCount=10
+114,LAW #114,CAMPO MINATO,Combined laws,"10 caselle bloccate, ma 10 caselle sicure magenta.",5,19,5-19,Misto,tiles.blockedCount=10;tiles.safeTileCount=10
 115,LAW #115,BATTUTA DI CACCIA,Combined laws,"Nemici inseguono la guardia più vicina, ma si muovono solo a turni alterni.",8,20,8-20,Misto,combo=ChaseNearest+MoveEvery2

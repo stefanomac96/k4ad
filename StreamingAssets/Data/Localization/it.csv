@@ -10,11 +10,11 @@ mode.campaign,Modalità Campagna
 mode.endless,Modalità Infinita
 difficulty.title,DIFFICOLTÀ
 difficulty.beginner,Principiante
-difficulty.beginner.description,"Meno nemici, dopo ogni livello le Guardie tornano automaticamente a 4 e gli obiettivi non vengono sbloccati."
+difficulty.beginner.description,"Meno nemici, dopo ogni livello le Guardie tornano automaticamente a 4. Le LAW usate non vengono registrate nel Libro delle Leggi e gli obiettivi non vengono sbloccati."
 difficulty.normal,Normale
 difficulty.normal.description,L'esperienza di gioco standard.
 difficulty.grandmaster,Gran Maestro
-difficulty.grandmaster.description,"Stesso bilanciamento di Normale, ma la partita comincia con una sola Guardia."
+difficulty.grandmaster.description,"Stesso numero e comportamento dei nemici di Normale, ma la partita comincia con una sola Guardia e le LAW di recupero non vengono offerte."
 difficulty.grandmaster.locked,La difficoltà Gran Maestro si sblocca solo dopo aver\nterminato con successo la Modalità Campagna a difficoltà Normale.
 back,Indietro
 resume,Riprendi
@@ -39,7 +39,7 @@ law,LEGGE
 choose.law,SCEGLI LA LEGGE IN VIGORE
 law.subtitle,In questo livello è valida la seguente legge:
 law.000.name,La partenza!
-law.000.description,Nessuna regola speciale. Valgono gli spostamenti classici degli scacchi.
+law.000.description,Nessuna regola speciale. Le Guardie si muovono normalmente di una casella in qualsiasi direzione.
 law.001.name,NESSUNA RITIRATA
 law.001.description,Le guardie non possono muoversi verso il basso.
 law.002.name,GIURAMENTO ORTOGONALE
@@ -47,15 +47,15 @@ law.002.description,Le guardie possono muoversi solo in verticale o orizzontale.
 law.003.name,GIURAMENTO DIAGONALE
 law.003.description,Le guardie possono muoversi solo in diagonale.
 law.004.name,CORONA IN AVANTI
-law.004.description,Sono consentite solo le tre direzioni che contengono movimento in avanti.
+law.004.description,"Le Guardie possono muoversi solo in avanti, avanti a sinistra o avanti a destra."
 law.005.name,RE LATERALE
-law.005.description,Le guardie possono muoversi solo lateralmente o in diagonale laterale; niente avanti/dietro dritto.
+law.005.description,Le Guardie non possono muoversi dritto in avanti o indietro; le altre 6 direzioni sono consentite.
 law.006.name,PASSO LUNGO
-law.006.description,Una volta per guardia nel livello è consentito un movimento ortogonale di 2 caselle libere.
+law.006.description,"Ogni Guardia, una volta per livello, può muoversi di 2 caselle in orizzontale o verticale, se la casella intermedia e quella di arrivo sono libere."
 law.007.name,DIAGONALE LUNGA
-law.007.description,Una volta per guardia nel livello è consentito un movimento diagonale di 2 caselle libere.
+law.007.description,"Ogni Guardia, una volta per livello, può muoversi di 2 caselle in diagonale, se la casella intermedia e quella di arrivo sono libere."
 law.008.name,PRIMO PASSO DOPPIO
-law.008.description,Il primo movimento di ogni guardia può essere di 2 caselle nella stessa direzione se il percorso è libero.
+law.008.description,"La prima mossa di ogni Guardia può essere di 2 caselle in qualsiasi direzione, se la casella intermedia è libera."
 law.009.name,PASSO ALTERNATO
 law.009.description,Ogni guardia deve alternare movimento ortogonale e diagonale.
 law.010.name,DIREZIONE NUOVA
@@ -63,7 +63,7 @@ law.010.description,Una guardia non può ripetere la stessa direzione del suo mo
 law.011.name,UN VENTO VIETATO
 law.011.description,Una delle 8 direzioni viene estratta a caso e resta vietata per tutto il livello.
 law.012.name,BALZO REALE
-law.012.description,Una volta nel livello una guardia può muoversi di 2 caselle in qualsiasi direzione se libera.
+law.012.description,"Una volta per livello, una Guardia può muoversi di 2 caselle in qualsiasi direzione, se la casella intermedia è libera."
 law.013.name,STIVALI PESANTI
 law.013.description,"Dopo un movimento diagonale, quella guardia non può essere scelta nel turno successivo."
 law.014.name,PASSO LEGGERO
@@ -71,9 +71,9 @@ law.014.description,La prima mossa ortogonale di ogni guardia non provoca rispos
 law.015.name,LONTANO DAL BORDO
 law.015.description,Le guardie non possono terminare il movimento su una casella di bordo della strada.
 law.016.name,SALTA LA FILA
-law.016.description,Una volta per guardia è possibile saltare un pezzo adiacente e atterrare nella casella immediatamente oltre.
+law.016.description,"Una volta per livello, ogni Guardia può saltare un pezzo adiacente, alleato o nemico, e atterrare sulla casella libera subito oltre."
 law.017.name,RACCOMANDAZIONE REALE
-law.017.description,"Quando una guardia raggiunge il checkpoint reticolato, il giocatore può continuare a giocare per cinque turni consecutivi."
+law.017.description,"Quando una Guardia raggiunge il checkpoint, la risposta nemica viene saltata e, se il livello continua, anche le 5 mosse successive delle Guardie non provocano risposta nemica."
 law.018.name,OH-OH CAVALLO
 law.018.description,I Cavalli nemici non possono terminare la loro mossa su una casella bianca.
 law.019.name,CAMBIO DI GUARDIA
@@ -83,13 +83,13 @@ law.020.description,Ogni guardia attiva deve muoversi una volta prima che una po
 law.021.name,CHIAMATA CASUALE
 law.021.description,"A ogni turno il gioco indica casualmente quale guardia deve muovere, se ha una mossa legale."
 law.022.name,DOPPIO COMANDO
-law.022.description,Una volta nel livello puoi effettuare due mosse consecutive prima della risposta nemica.
+law.022.description,"Una volta per livello, puoi effettuare una mossa senza risposta nemica, ottenendo così 2 mosse consecutive."
 law.023.name,QUINTO SILENZIOSO
 law.023.description,Ogni quinta mossa delle guardie salta la risposta nemica.
 law.024.name,QUINTO RUMOROSO
 law.024.description,Ogni quinta mossa delle guardie concede due mosse nemiche consecutive.
 law.025.name,APERTURA CALMA
-law.025.description,Per le prime tre risposte i nemici non possono muovere né catturare.
+law.025.description,I nemici saltano le prime 3 risposte del livello.
 law.026.name,SLANCIO DI CATTURA
 law.026.description,"Dopo una cattura la stessa guardia può muovere immediatamente una seconda volta, una sola volta per turno."
 law.027.name,ULTIMO VELOCE
@@ -99,9 +99,9 @@ law.028.description,"Finché tutte e 4 le guardie sono vive, i nemici si muovono
 law.029.name,OROLOGIO VELOCE
 law.029.description,"Ogni quattro mosse delle guardie, i nemici possono muovere per due mosse consecutive."
 law.030.name,PAUSA REALE
-law.030.description,Una volta nel livello congela per un turno tutti i nemici visibili.
+law.030.description,"Una volta per livello, puoi saltare un’intera risposta nemica."
 law.031.name,PRIMA GRAZIA
-law.031.description,Il primo colpo che eliminerebbe una guardia viene ignorato.
+law.031.description,Il primo attacco nemico che eliminerebbe una Guardia viene annullato.
 law.032.name,RESTARE UNITI
 law.032.description,Una guardia non può terminare oltre 3 caselle dalla guardia più vicina.
 law.033.name,DISPERSI
@@ -109,7 +109,7 @@ law.033.description,Due guardie non possono terminare su caselle adiacenti.
 law.034.name,COLONNE DIVERSE
 law.034.description,Due guardie non possono occupare la stessa colonna.
 law.035.name,AVANGUARDIA
-law.035.description,Ogni 3 turni deve muovere una delle guardie più avanzate.
+law.035.description,Ogni terza mossa delle Guardie deve essere effettuata da una delle Guardie più avanzate.
 law.036.name,GUARDIA CENTRALE
 law.036.description,Una guardia casuale è marcata: deve restare entro 1 casella dalla linea centrale della strada.
 law.037.name,GUARDIA CACCIATRICE
@@ -117,7 +117,7 @@ law.037.description,Una guardia casuale deve effettuare almeno una cattura prima
 law.038.name,LEGAME DI COPPIA
 law.038.description,Due guardie casuali devono restare entro 2 caselle l'una dall'altra.
 law.039.name,PASSO DEL SUPERSTITE
-law.039.description,"Dopo la perdita di una guardia, la mossa successiva può essere di 2 caselle."
+law.039.description,"Dopo la perdita di una Guardia, la mossa successiva può essere di 2 caselle in qualsiasi direzione, se la casella intermedia è libera."
 law.040.name,SCORTA REALE
 law.040.description,Una guardia marcata non può essere catturata mentre è adiacente a un'altra guardia attiva.
 law.041.name,CAVALLI IMMOBILI
@@ -125,7 +125,7 @@ law.041.description,I Cavalli nemici restano immobili e non possono catturare.
 law.042.name,CAVALLI CACCIATORI
 law.042.description,I Cavalli preferiscono la mossa legale che li avvicina alla guardia più vicina.
 law.043.name,Alzati e cammina!
-law.043.description,Fai tornare in vita una guardia posizionandoti nella casella indicata. La guardia risorta comincerà il livello dalla partenza.
+law.043.description,"Per ogni Guardia mancante compare una casella speciale. Entrandoci, resusciti una Guardia, che riparte dalla riga iniziale."
 law.044.name,ALFIERI IMPREVEDIBILI
 law.044.description,Gli Alfieri scelgono casualmente una mossa legale entro la loro portata.
 law.045.name,NEMICI IN AVANTI
@@ -139,21 +139,21 @@ law.048.description,"Le Torri nemiche si muovono e catturano soltanto in diagona
 law.049.name,UN SOLO TIPO MOBILE
 law.049.description,Un solo tipo nemico estratto fra quelli presenti può muovere o catturare; tutti gli altri restano immobili.
 law.050.name,CAMBIO DELLA GUARDIA
-law.050.description,L'avversario non può scegliere lo stesso pezzo in due risposte consecutive se un altro può muovere.
+law.050.description,Lo stesso nemico non può agire in 2 risposte consecutive se un altro nemico ha una mossa legale.
 law.051.name,CAVALLI ORIZZONTALI
-law.051.description,I Cavalli nemici possono saltare soltanto di due colonne e una riga.
+law.051.description,I Cavalli nemici possono usare solo il salto a L di 2 colonne e 1 riga.
 law.052.name,TORRI AFFAMATE
 law.052.description,"Se una Torre può catturare, l'avversario deve scegliere una cattura di Torre."
 law.053.name,CATTURA LONTANA
-law.053.description,I nemici a lunga gittata non possono catturare a distanza di una casella.
+law.053.description,"Torri, Alfieri e Regine non possono catturare una Guardia a distanza di 1 casella."
 law.054.name,CATTURA VICINA
-law.054.description,I nemici a lunga gittata possono catturare soltanto a distanza di una casella.
+law.054.description,"Torri, Alfieri e Regine possono catturare una Guardia solo a distanza di 1 casella."
 law.055.name,DOVE SONO I MIEI BINOCOLI?
-law.055.description,"I nemici lontani appaiono come simboli ""?"" o ""!"" finché non sono entro 6 righe."
+law.055.description,"I nemici lontani appaiono come ""?"" o ""!"" finché non si trovano entro 6 righe da una Guardia."
 law.056.name,PAUSA FRA CATTURE
 law.056.description,"Dopo un attacco, quel nemico non può attaccare nella risposta successiva."
 law.057.name,LUNGA VISTA
-law.057.description,Tutti i pezzi a gittata riducono la portata di 5.
+law.057.description,"La portata di Torri, Alfieri e Regine è ridotta di 5 caselle."
 law.058.name,METAMORFOSI
 law.058.description,"Ogni 15 movimenti delle guardie, un pezzo nemico Pedone a caso si trasforma in Cavallo."
 law.059.name,RODEO
@@ -179,9 +179,9 @@ law.068.description,I nemici collocati nella metà superiore della strada sono t
 law.069.name,STRADA LARGA
 law.069.description,La strada è larga 2 colonne in più del normale.
 law.070.name,STRADA STRETTA
-law.070.description,"La strada è larga 2 colonne in meno del normale, con minimo sicuro."
+law.070.description,"La strada è larga 2 colonne in meno del normale, ma non scende mai sotto la larghezza minima giocabile."
 law.071.name,STRADA DRITTA
-law.071.description,Riduce quasi a zero la probabilità di curve.
+law.071.description,Le curve sono molto più rare: la loro probabilità scende al 20% del normale.
 law.072.name,STRADA TORTUOSA
 law.072.description,Aumenta del 50% la probabilità di cambio direzione.
 law.073.name,SERPENTINA
@@ -199,29 +199,29 @@ law.078.description,La linea centrale della strada cambia improvvisamente una vo
 law.079.name,USCITA IN DIAGONALE
 law.079.description,Le guardie possono entrare nel checkpoint soltanto con una mossa diagonale.
 law.080.name,Teletrasporto
-law.080.description,"Se entri in una casella magenta, uscirai dalla casella ciano con lo stesso numero, e viceversa. Tuttavia, il passaggio è possibile solo se le due caselle non sono entrambe occupate."
+law.080.description,"Le caselle magenta e ciano con lo stesso numero formano una coppia di portali. Quando una Guardia entra in una, viene teletrasportata nell’altra, ma solo se la casella di uscita è libera."
 law.081.name,VARCO MOBILE
-law.081.description,La casella valida del checkpoint si sposta di una colonna ogni 2 turni.
+law.081.description,La casella attiva del checkpoint si sposta di una colonna dopo ogni 2 mosse delle Guardie.
 law.082.name,CRISI D'IDENTITÀ
 law.082.description,"In questo livello, le Guardie si muovono come cavalli."
 law.083.name,CASELLE SICURE
 law.083.description,15 caselle magenta casuali proteggono dalle catture le guardie che le occupano.
 law.084.name,BLOCCHI MAGENTA
-law.084.description,Genera 10 caselle viola invalicabili sulla strada.
+law.084.description,Genera 10 caselle magenta invalicabili sulla strada.
 law.085.name,BLOCCO EVANESCENTE
-law.085.description,Quindici blocchi sono presenti all’inizio; uno viene rimosso ogni quattro mosse del giocatore.
+law.085.description,All’inizio ci sono 15 blocchi; dopo ogni 4 mosse delle Guardie ne viene rimosso uno.
 law.086.name,CASELLE A SENSO UNICO
 law.086.description,Le caselle marcate possono essere attraversate dalle guardie solo con movimenti diagonali.
 law.087.name,IMPRONTE DI CAVALLI
-law.087.description,"Tutte le caselle che sono state occupate da un cavallo, diventeranno inaccessibili quando quest'ultimo si muoverà da esse."
+law.087.description,"Quando un Cavallo nemico lascia una casella, quella casella diventa permanentemente invalicabile."
 law.088.name,VARCO ALTERNATO
-law.088.description,Le caselle valide del checkpoint alternano attivo/inattivo a ogni turno.
+law.088.description,Le caselle del checkpoint alternano tra attive e inattive dopo ogni mossa delle Guardie.
 law.089.name,SCELTA ANNUNCIATA
-law.089.description,"All'inizio del turno bianco viene indicato il nemico più vicino a una guardia, che agirà se avrà una mossa legale."
+law.089.description,"All’inizio di ogni turno del giocatore viene indicato il nemico più vicino a una Guardia. Sarà lui ad agire nella risposta successiva, se ha una mossa legale."
 law.090.name,DOVE SONO I MIEI OCCHIALI?
-law.090.description,"I nemici lontani appaiono come simboli ""?"" finché non sono entro 4 righe."
+law.090.description,"I nemici lontani appaiono come ""?"" finché non si trovano entro 4 righe da una Guardia."
 law.091.name,Boom!
-law.091.description,"All'inizio del livello appare una casella a caso con un numero in magenta che parte da 5 e diminuisce ad ogni mossa delle Guardie. Quando arriva a zero, la casella esplode, elimina qualsiasi pezzo presente e diventa inutilizzabile. Subito dopo appare una nuova casella con lo stesso effetto."
+law.091.description,"All’inizio del livello una casella casuale mostra un conto alla rovescia da 5. Il numero diminuisce dopo ogni mossa delle Guardie. A zero, la casella esplode, elimina qualsiasi pezzo presente, diventa inutilizzabile e ne appare una nuova con lo stesso effetto."
 law.092.name,LA CASA NERA
 law.092.description,I Pedoni nemici non possono catturare una Guardia che si trova su una casella nera.
 law.093.name,RALLENTARE
@@ -231,49 +231,49 @@ law.094.description,Le Torri e gli Alfieri possono muoversi solo fino a una dist
 law.095.name,FRENATA
 law.095.description,Le Torri e gli Alfieri possono muoversi solo fino a una distanza massima di 1 casella.
 law.096.name,CATTURA LIBERA
-law.096.description,La prima cattura del livello non provoca risposta nemica.
+law.096.description,La prima cattura effettuata da una Guardia nel livello non provoca risposta nemica.
 law.097.name,CATTURA RUMOROSA
-law.097.description,Ogni cattura provoca una risposta nemica extra.
+law.097.description,Ogni cattura effettuata da una Guardia provoca una risposta nemica extra.
 law.098.name,NESSUNA CATTURA
-law.098.description,Le guardie non possono catturare; devono evitare tutti i nemici.
+law.098.description,Le Guardie non possono catturare i pezzi nemici.
 law.099.name,PAUSA DI CATTURA
 law.099.description,Una guardia che cattura non può catturare nuovamente per 2 suoi movimenti.
 law.100.name,CATENA DI CATTURE
-law.100.description,"Se una guardia cattura e può catturare di nuovo da lì, può farlo immediatamente una volta."
+law.100.description,"Dopo una cattura, se dalla nuova casella è disponibile un’altra cattura, la stessa Guardia può effettuarla immediatamente una sola volta."
 law.101.name,NASCONDINO
-law.101.description,"Durante i turni dispari delle guardie tutti i nemici diventano invisibili, ma possono sempre catturare ed essere catturati."
+law.101.description,"Durante le mosse dispari delle Guardie, tutti i nemici diventano invisibili, ma possono comunque catturare ed essere catturati."
 law.102.name,PREDA VIETATA
 law.102.description,Un nemico casuale non può essere catturato.
 law.103.name,PREZZO DEL RE
-law.103.description,La prima cattura di ogni guardia è gratuita; le successive provocano una risposta nemica extra.
+law.103.description,"La prima cattura di ogni Guardia non provoca risposta nemica; dalla seconda in poi, ogni cattura provoca una risposta nemica extra."
 law.104.name,QUATTRO PASSI
 law.104.description,Ogni quarta mossa della squadra può coprire due caselle ortogonali lungo un percorso libero.
 law.105.name,QUINTO PASSO OBLIQUO
 law.105.description,Ogni quinta mossa della squadra deve essere diagonale.
 law.106.name,TRAMONTO STRETTO
-law.106.description,"Dopo la decima mossa del giocatore, i nemici a lunga gittata guadagnano una mossa extra."
+law.106.description,"Subito dopo la 10ª mossa del giocatore, Torri, Alfieri e Regine ottengono una sola mossa nemica extra."
 law.107.name,DUE ONDATE
 law.107.description,I nemici vengono concentrati in due fasce separate.
 law.108.name,FURTO D'IDENTITÀ
 law.108.description,"In questo livello, Guardie e Nemici si trasformano in quello che hanno appena catturato."
 law.109.name,CALMA ALL'USCITA
-law.109.description,"Ogni guardia arrivata al checkpoint annulla la risposta nemica successiva, se il livello continua."
+law.109.description,"Quando una Guardia raggiunge il checkpoint, la risposta nemica di quella mossa viene saltata, se il livello continua."
 law.110.name,ULTIMO TERZO
-law.110.description,L’ultimo terzo della strada viene generato più stretto di una colonna e con soli nemici iniziali.
+law.110.description,L’ultimo terzo della strada è più stretto di 1 colonna.
 law.111.name,PICCOLA GRAZIA
-law.111.description,"Strada -1 colonna, ma il primo colpo alla squadra viene ignorato."
+law.111.description,"La strada è più stretta di 1 colonna, ma il primo attacco nemico che eliminerebbe una Guardia viene annullato."
 law.112.name,CURVE SILENZIOSE
-law.112.description,"Strada più tortuosa, ma i nemici rispondono solo ogni 2 mosse."
+law.112.description,"La strada ha più curve, ma i nemici rispondono solo dopo ogni 2 mosse delle Guardie."
 law.113.name,PIEDI VELOCI
-law.113.description,"Ogni guardia ha un Dash, ma non può essere scelta due volte di fila."
+law.113.description,"Ogni Guardia può usare una volta un Dash di 2 caselle in qualsiasi direzione, se la casella intermedia è libera. Inoltre, la stessa Guardia non può essere scelta 2 volte di fila."
 law.114.name,CAMPO MINATO
-law.114.description,"10 caselle bloccate, ma 10 caselle sicure ciano."
+law.114.description,Genera 10 caselle bloccate e 10 caselle sicure magenta. Una Guardia su una casella sicura non può essere catturata.
 law.115.name,BATTUTA DI CACCIA
 law.115.description,"Nemici inseguono la guardia più vicina, ma si muovono solo a turni alterni."
 law.998.name,Intervento dall'alto!
-law.998.description,Resuscita tutte le tue Guardie morte.
+law.998.description,Riporta in vita tutte le Guardie eliminate.
 law.999.name,Fino all'ultima mossa!
-law.999.description,"Dopo ogni turno completo, la Guardia Reale e la Regina nemica vengono trasformate in un pezzo degli scacchi a caso."
+law.999.description,"Alla fine di ogni turno completo, la Guardia Reale e la Regina nemica si trasformano indipendentemente in un pezzo degli scacchi casuale."
 book,LIBRO DELLE LEGGI
 challenges,SFIDE
 hidden,NASCOSTA
@@ -351,6 +351,7 @@ result.defeat,SCONFITTA
 result.defeat.body,Tutte le guardie sono state catturate.
 result.stalemate,STALLO
 result.stalemate.body,Nessuna guardia ha una mossa disponibile.
+result.stalemate.retry,Riprova
 exit.confirm,SEI SICURO DI LASCIARE IL REGNO?
 exit.yes,"Sì, esci!"
 exit.no,"No, torna al gioco!"
@@ -397,6 +398,15 @@ law.runtime.willAct,Agirà: {0}
 law.runtime.rowsToGate,Righe al varco: {0}
 law.runtime.threats,Guardia #{0} · Minacce: {1}
 law.runtime.freeCaptures,Catture gratuite: {0}
+law.runtime.guardCharges,Guardia #{0} · Cariche: {1}
+law.runtime.freeTurns,Turni liberi: {0}
+law.runtime.blocksCountdown,Blocchi: {0} · Rimozione tra: {1}
+law.runtime.blocksCleared,Blocchi: 0
+law.runtime.captureCooldown,Guardia #{0} · Cattura tra: {1}
+law.runtime.enemiesHidden,Nemici: NASCOSTI
+law.runtime.enemiesVisible,Nemici: VISIBILI
+law.runtime.firstCaptureFree,Guardia #{0} · Prima cattura gratuita
+law.runtime.nextCaptureExtra,Guardia #{0} · Prossima cattura: +1 risposta
 options.gameplay,Gioco
 options.difficulty,Difficoltà
 options.chessboardSize,Dimensioni della scacchiera

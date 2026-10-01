@@ -10,11 +10,11 @@ mode.campaign,Campaign Mode
 mode.endless,Endless Mode
 difficulty.title,DIFFICULTY
 difficulty.beginner,Beginner
-difficulty.beginner.description,"Fewer enemies, the Guards are automatically restored to 4 after each level, and achievements cannot be unlocked."
+difficulty.beginner.description,"Fewer enemies, the Guards are automatically restored to 4 after each level. Laws used in Beginner are not recorded in the Book of Laws, and achievements cannot be unlocked."
 difficulty.normal,Normal
 difficulty.normal.description,The standard gameplay experience.
 difficulty.grandmaster,Grandmaster
-difficulty.grandmaster.description,"Same balance as Normal, but the game starts with only one Guard."
+difficulty.grandmaster.description,"Same enemy count and behavior as Normal, but the game starts with only one Guard and recovery Laws are not offered."
 difficulty.grandmaster.locked,Grandmaster difficulty is unlocked only after\nsuccessfully completing Campaign Mode on Normal difficulty.
 back,Back
 resume,Resume
@@ -39,7 +39,7 @@ law,LAW
 choose.law,CHOOSE THE LAW IN EFFECT
 law.subtitle,The following law is in effect for this level:
 law.000.name,THE DEPARTURE!
-law.000.description,No special rules. Standard chess movement rules apply.
+law.000.description,No special rules. Guards normally move one square in any direction.
 law.001.name,NO RETREAT
 law.001.description,Guards cannot move downward.
 law.002.name,ORTHOGONAL OATH
@@ -47,15 +47,15 @@ law.002.description,Guards can move only vertically or horizontally.
 law.003.name,DIAGONAL OATH
 law.003.description,Guards can move only diagonally.
 law.004.name,FORWARD CROWN
-law.004.description,Only the three directions that include forward movement are allowed.
+law.004.description,"Guards can move only forward, forward-left, or forward-right."
 law.005.name,SIDEWAYS KING
-law.005.description,Guards can move only sideways or diagonally sideways; no straight forward or backward movement.
+law.005.description,Guards cannot move straight forward or backward; the other 6 directions are allowed.
 law.006.name,LONG STRIDE
-law.006.description,"Once per guard per level, a 2-square orthogonal move is allowed if both squares are clear."
+law.006.description,"Once per level, each Guard can move 2 squares horizontally or vertically if both the middle and destination squares are empty."
 law.007.name,LONG DIAGONAL
-law.007.description,"Once per guard per level, a 2-square diagonal move is allowed if both squares are clear."
+law.007.description,"Once per level, each Guard can move 2 squares diagonally if both the middle and destination squares are empty."
 law.008.name,FIRST STEP TWO
-law.008.description,Each guard's first move can cover 2 squares in the same direction if the path is clear.
+law.008.description,Each Guard's first move can be 2 squares in any direction if the middle square is empty.
 law.009.name,ALTERNATING STEP
 law.009.description,Each guard must alternate between orthogonal and diagonal movement.
 law.010.name,NO SAME DIRECTION
@@ -63,7 +63,7 @@ law.010.description,A guard cannot repeat the same direction as its previous mov
 law.011.name,ONE FORBIDDEN WIND
 law.011.description,One of the 8 directions is chosen at random and remains forbidden for the entire level.
 law.012.name,ROYAL DASH
-law.012.description,"Once per level, one guard can move 2 squares in any direction if the path is clear."
+law.012.description,"Once per level, one Guard can move 2 squares in any direction if the middle square is empty."
 law.013.name,HEAVY BOOTS
 law.013.description,"After a diagonal move, that guard cannot be selected on the next turn."
 law.014.name,LIGHT STEP
@@ -71,9 +71,9 @@ law.014.description,Each guard's first orthogonal move causes no enemy response.
 law.015.name,NO EDGE STEP
 law.015.description,Guards cannot end their move on a road-edge square.
 law.016.name,JUMP THE LINE
-law.016.description,"Once per guard, you may jump over an adjacent piece and land on the square immediately beyond it."
+law.016.description,"Once per level, each Guard can jump over one adjacent piece, friendly or enemy, and land on the empty square immediately beyond it."
 law.017.name,ROYAL RECOMMENDATION
-law.017.description,"When a guard reaches the checkered checkpoint, the player may keep playing for five consecutive turns."
+law.017.description,"When a Guard reaches the checkpoint, the enemy response is skipped and, if the level continues, the next 5 Guard moves also cause no enemy response."
 law.018.name,BLACK KNIGHT
 law.018.description,Enemy Knights cannot end their move on a white square.
 law.019.name,NO REPEAT
@@ -83,13 +83,13 @@ law.020.description,Every active guard must move once before any of them can mov
 law.021.name,RANDOM CALL
 law.021.description,"Each turn, the game randomly indicates which guard must move, provided it has a legal move."
 law.022.name,DOUBLE COMMAND
-law.022.description,"Once per level, you can make two consecutive moves before the enemy response."
+law.022.description,"Once per level, you can make one move with no enemy response, giving you 2 consecutive moves."
 law.023.name,QUIET FIFTH
 law.023.description,Every fifth guard move skips the enemy response.
 law.024.name,LOUD FIFTH
 law.024.description,Every fifth guard move grants the enemy two consecutive moves.
 law.025.name,OPENING CALM
-law.025.description,"For the first three enemy responses, enemies cannot move or capture."
+law.025.description,Enemies skip the first 3 enemy responses of the level.
 law.026.name,CAPTURE MOMENTUM
 law.026.description,"After a capture, the same guard may immediately move a second time, once per turn."
 law.027.name,LAST MAN SPEED
@@ -99,9 +99,9 @@ law.028.description,"While all 4 guards are alive, enemies move only after every
 law.029.name,FAST CLOCK
 law.029.description,"Every four guard moves, enemies can make two consecutive moves."
 law.030.name,ROYAL PAUSE
-law.030.description,"Once per level, freeze all visible enemies for one turn."
+law.030.description,"Once per level, you can skip one entire enemy response."
 law.031.name,FIRST MERCY
-law.031.description,The first hit that would eliminate a guard is ignored.
+law.031.description,The first enemy attack that would eliminate a Guard is cancelled.
 law.032.name,KEEP TOGETHER
 law.032.description,A guard cannot end more than 3 squares away from the nearest guard.
 law.033.name,SCATTER
@@ -109,7 +109,7 @@ law.033.description,Two guards cannot end their moves on adjacent squares.
 law.034.name,NO SAME FILE
 law.034.description,Two guards cannot occupy the same column.
 law.035.name,VANGUARD
-law.035.description,"Every 3 turns, one of the most advanced guards must move."
+law.035.description,Every third Guard move must be made by one of the most advanced Guards.
 law.036.name,CENTER GUARD
 law.036.description,One random guard is marked and must remain within 1 square of the road's center line.
 law.037.name,HUNTER GUARD
@@ -117,7 +117,7 @@ law.037.description,One random guard must make at least one capture before it ca
 law.038.name,PAIR BOND
 law.038.description,Two random guards must remain within 2 squares of each other.
 law.039.name,SURVIVOR'S STEP
-law.039.description,"After a guard is lost, the next move may cover 2 squares."
+law.039.description,"After a Guard is lost, the next move can be 2 squares in any direction if the middle square is empty."
 law.040.name,ROYAL ESCORT
 law.040.description,A marked guard cannot be captured while adjacent to another active guard.
 law.041.name,STILL KNIGHTS
@@ -125,7 +125,7 @@ law.041.description,Enemy Knights remain still and cannot capture.
 law.042.name,HUNTING KNIGHTS
 law.042.description,Knights prefer the legal move that brings them closer to the nearest guard.
 law.043.name,Lend a hand
-law.043.description,Bring a guard back to life by moving onto the indicated square. The resurrected guard will start from the starting row.
+law.043.description,"A special square appears for each missing Guard. Enter one to revive a Guard, which returns on the starting row."
 law.044.name,RANDOM BISHOPS
 law.044.description,Bishops choose a legal move at random within their range.
 law.045.name,FORWARD ENEMIES
@@ -139,21 +139,21 @@ law.048.description,"Enemy Rooks move and capture only diagonally, like Bishops.
 law.049.name,ONE MOBILE TYPE
 law.049.description,Only one randomly selected enemy type among those present can move or capture; all others remain still.
 law.050.name,CHANGING OF THE GUARD
-law.050.description,The opponent cannot choose the same piece on two consecutive responses if another piece can move.
+law.050.description,The same enemy cannot act in 2 consecutive enemy responses if another enemy has a legal move.
 law.051.name,HORIZONTAL KNIGHTS
-law.051.description,Enemy Knights can jump only two columns and one row.
+law.051.description,Enemy Knights can use only the L-shaped jump of 2 columns and 1 row.
 law.052.name,HUNGRY ROOKS
 law.052.description,"If a Rook can capture, the opponent must choose a Rook capture."
 law.053.name,DISTANT CAPTURE
-law.053.description,Long-range enemies cannot capture from a distance of one square.
+law.053.description,"Rooks, Bishops, and Queens cannot capture a Guard from 1 square away."
 law.054.name,CLOSE CAPTURE
-law.054.description,Long-range enemies can capture only from a distance of one square.
+law.054.description,"Rooks, Bishops, and Queens can capture a Guard only from 1 square away."
 law.055.name,WHERE ARE MY BINOCULARS?
-law.055.description,"Distant enemies appear as ""?"" or ""!"" symbols until they are within 6 rows."
+law.055.description,"Distant enemies appear as ""?"" or ""!"" until they are within 6 rows of a Guard."
 law.056.name,COOLDOWN FIRE
 law.056.description,"After an attack, that enemy cannot attack on the next enemy response."
 law.057.name,LONG SIGHT
-law.057.description,All ranged pieces reduce their range by 5.
+law.057.description,"The range of Rooks, Bishops, and Queens is reduced by 5 squares."
 law.058.name,METAMORPHOSIS
 law.058.description,"Every 15 guard moves, a random enemy Pawn transforms into a Knight."
 law.059.name,RODEO
@@ -179,9 +179,9 @@ law.068.description,Enemies placed in the upper half of the road are all Pawns.
 law.069.name,WIDE ROAD
 law.069.description,The road is 2 columns wider than normal.
 law.070.name,NARROW ROAD
-law.070.description,"The road is 2 columns narrower than normal, with a safe minimum width."
+law.070.description,"The road is 2 columns narrower than normal, but never below the minimum playable width."
 law.071.name,STRAIGHT ROAD
-law.071.description,Reduces the probability of bends almost to zero.
+law.071.description,Bends are much rarer: their probability drops to 20% of normal.
 law.072.name,WINDING ROAD
 law.072.description,Increases the probability of changing direction by 50%.
 law.073.name,SERPENTINE
@@ -199,29 +199,29 @@ law.078.description,The road's center line shifts abruptly once.
 law.079.name,DIAGONAL EXIT
 law.079.description,Guards can enter the checkpoint only with a diagonal move.
 law.080.name,Portals
-law.080.description,"If you enter a magenta square, you will exit from the cyan square with the same number, and vice versa. However, teleportation is possible only if the two squares are not both occupied."
+law.080.description,"Magenta and cyan squares with the same number form a portal pair. When a Guard enters one, it teleports to the other, but only if the exit square is empty."
 law.081.name,MOVING GATE
-law.081.description,The valid checkpoint square shifts by one column every 2 turns.
+law.081.description,The active checkpoint square shifts by one column after every 2 Guard moves.
 law.082.name,IDENTITY CRISIS
 law.082.description,"In this level, the Guards move like knights."
 law.083.name,SAFE SQUARES
 law.083.description,15 random magenta safe squares protect any guards occupying them from captures.
 law.084.name,MAGENTA BLOCKS
-law.084.description,Generates 10 impassable purple squares on the road.
+law.084.description,Generates 10 impassable magenta squares on the road.
 law.085.name,FADING BLOCK
-law.085.description,Fifteen blocks are present at the start; one is removed every four player moves.
+law.085.description,There are 15 blocks at the start; one is removed after every 4 Guard moves.
 law.086.name,ONE-WAY TILES
 law.086.description,Marked tiles can only be crossed by Guards using diagonal moves.
 law.087.name,HORSE TRACKS
-law.087.description,Every square occupied by a Knight becomes inaccessible once that Knight moves away from it.
+law.087.description,"Whenever an enemy Knight leaves a square, that square becomes permanently impassable."
 law.088.name,ALTERNATING GATE
-law.088.description,Valid checkpoint squares alternate between active and inactive every turn.
+law.088.description,Checkpoint squares alternate between active and inactive after every Guard move.
 law.089.name,ANNOUNCED CHOICE
-law.089.description,"At the start of the white turn, the enemy closest to a guard is indicated and will act if it has a legal move."
+law.089.description,"At the start of each player turn, the enemy closest to a Guard is indicated. It will act on the next enemy response if it has a legal move."
 law.090.name,WHERE ARE MY GLASSES?
-law.090.description,Distant enemies appear as '?' symbols until they are within 4 rows.
+law.090.description,"Distant enemies appear as ""?"" until they are within 4 rows of a Guard."
 law.091.name,Boom!
-law.091.description,"At the start of the level, a random tile appears with a magenta number starting at 5 and decreasing after every Guard move. When it reaches zero, the tile explodes, removes any piece on it, and becomes unusable. A new tile with the same effect then appears."
+law.091.description,"At the start of the level, a random square shows a countdown from 5. It decreases after every Guard move. At zero, the square explodes, removes any piece on it, becomes unusable, and a new countdown square appears."
 law.092.name,THE BLACK HOUSE
 law.092.description,Enemy Pawns cannot capture a Guard standing on a black square.
 law.093.name,SLOW DOWN
@@ -231,49 +231,49 @@ law.094.description,Rooks and Bishops can move only up to a maximum distance of 
 law.095.name,BRAKING
 law.095.description,Rooks and Bishops can move only up to a maximum distance of 1 square.
 law.096.name,FREE CAPTURE
-law.096.description,The first capture of the level causes no enemy response.
+law.096.description,The first capture made by a Guard in the level causes no enemy response.
 law.097.name,LOUD CAPTURE
-law.097.description,Every capture triggers one extra enemy response.
+law.097.description,Every capture made by a Guard triggers one extra enemy response.
 law.098.name,NO CAPTURE
-law.098.description,Guards cannot capture and must avoid all enemies.
+law.098.description,Guards cannot capture enemy pieces.
 law.099.name,CAPTURE COOLDOWN
 law.099.description,A guard that captures cannot capture again for its next 2 moves.
 law.100.name,CHAIN CAPTURE
-law.100.description,"If a guard captures and can capture again from there, it may immediately do so once."
+law.100.description,"After a capture, if another capture is available from the new square, the same Guard may make it immediately, once."
 law.101.name,HIDE AND SEEK
-law.101.description,"During the Guards' odd-numbered shifts, all enemies become invisible, but they can still capture and be captured."
+law.101.description,"During odd-numbered Guard moves, all enemies become invisible, but they can still capture and be captured."
 law.102.name,FORBIDDEN PREY
 law.102.description,One random enemy cannot be captured.
 law.103.name,KING'S PRICE
-law.103.description,Each guard's first capture is free; subsequent captures trigger one extra enemy response.
+law.103.description,"Each Guard's first capture causes no enemy response; from the second onward, every capture triggers one extra enemy response."
 law.104.name,FOUR STEPS
 law.104.description,Every fourth team move may cover two orthogonal squares along a clear path.
 law.105.name,FIFTH DIAGONAL STEP
 law.105.description,Every fifth team move must be diagonal.
 law.106.name,NARROW SUNSET
-law.106.description,"After the player's tenth move, long-range enemies gain one extra move."
+law.106.description,"Immediately after the player's 10th move, Rooks, Bishops, and Queens get one extra enemy move."
 law.107.name,TWO WAVES
 law.107.description,Enemies are concentrated in two separate bands.
 law.108.name,IDENTITY THEFT
 law.108.description,"In this level, Guards and Enemies transform into whatever they have just captured."
 law.109.name,FIRST CROSS CALM
-law.109.description,"Each guard that reaches the checkpoint cancels the next enemy response, if the level continues."
+law.109.description,"When a Guard reaches the checkpoint, the enemy response to that move is skipped if the level continues."
 law.110.name,FINAL THIRD
-law.110.description,The final third of the road is generated one column narrower and with only its initial enemies.
+law.110.description,The final third of the road is 1 column narrower.
 law.111.name,SMALL MERCY
-law.111.description,"The road is 1 column narrower, but the first hit suffered by the team is ignored."
+law.111.description,"The road is 1 column narrower, but the first enemy attack that would eliminate a Guard is cancelled."
 law.112.name,QUIET CURVES
-law.112.description,"The road is more winding, but enemies respond only after every 2 moves."
+law.112.description,"The road has more bends, but enemies respond only after every 2 Guard moves."
 law.113.name,FAST FEET
-law.113.description,"Each guard has one Dash, but cannot be selected twice in a row."
+law.113.description,"Each Guard can use one 2-square Dash in any direction if the middle square is empty. Also, the same Guard cannot be selected twice in a row."
 law.114.name,MINEFIELD
-law.114.description,"10 blocked squares, but also 10 cyan safe squares."
+law.114.description,Generates 10 blocked squares and 10 magenta safe squares. A Guard on a safe square cannot be captured.
 law.115.name,HUNTING PARTY
 law.115.description,"Enemies chase the nearest guard, but move only on alternating turns."
 law.998.name,Rise from your grave!
-law.998.description,Revive all your dead Guards.
+law.998.description,Revives all eliminated Guards.
 law.999.name,UNTIL THE VERY LAST MOVE!
-law.999.description,"After every full turn, the Royal Guard and the enemy Queen are transformed into a random chess piece."
+law.999.description,"At the end of every full turn, the Royal Guard and the enemy Queen each transform independently into a random chess piece."
 book,LAW BOOK
 challenges,CHALLENGES
 hidden,HIDDEN
@@ -355,6 +355,7 @@ result.defeat,DEFEAT
 result.defeat.body,All guards have been captured.
 result.stalemate,STALEMATE
 result.stalemate.body,No guard has an available move.
+result.stalemate.retry,Retry
 exit.confirm,ARE YOU SURE YOU WANT TO LEAVE THE KINGDOM?
 exit.yes,"Yes, exit!"
 exit.no,"No, back to the game!"
@@ -402,6 +403,15 @@ law.runtime.willAct,Will act: {0}
 law.runtime.rowsToGate,Rows to gate: {0}
 law.runtime.threats,Guard #{0} · Threats: {1}
 law.runtime.freeCaptures,Free captures: {0}
+law.runtime.guardCharges,Guard #{0} · Charges: {1}
+law.runtime.freeTurns,Free moves: {0}
+law.runtime.blocksCountdown,Blocks: {0} · Removal in: {1}
+law.runtime.blocksCleared,Blocks: 0
+law.runtime.captureCooldown,Guard #{0} · Capture in: {1}
+law.runtime.enemiesHidden,Enemies: HIDDEN
+law.runtime.enemiesVisible,Enemies: VISIBLE
+law.runtime.firstCaptureFree,Guard #{0} · First capture is free
+law.runtime.nextCaptureExtra,Guard #{0} · Next capture: +1 response
 options.gameplay,Gameplay
 options.difficulty,Difficulty
 options.chessboardSize,Chessboard size
