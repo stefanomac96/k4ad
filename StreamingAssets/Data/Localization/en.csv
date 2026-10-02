@@ -1,4 +1,4 @@
-﻿Key,Text
+Key,Text
 game.title,KING 4 A DAY
 menu.new,New Game
 menu.options,Options
@@ -35,11 +35,12 @@ guards,GUARDS
 player,Player
 computer,Computer
 royal.guards,Guards
+hud.pause.hover,Click to pause!
 law,LAW
 choose.law,CHOOSE THE LAW IN EFFECT
 law.subtitle,The following law is in effect for this level:
 law.000.name,THE DEPARTURE!
-law.000.description,No special rules. Guards normally move one square in any direction.
+law.000.description,No special rules. Guards normally move one square in any direction; on their first move they may advance 2 squares straight forward if the path is clear.
 law.001.name,NO RETREAT
 law.001.description,Guards cannot move downward.
 law.002.name,ORTHOGONAL OATH
@@ -55,7 +56,7 @@ law.006.description,"Once per level, each Guard can move 2 squares horizontally 
 law.007.name,LONG DIAGONAL
 law.007.description,"Once per level, each Guard can move 2 squares diagonally if both the middle and destination squares are empty."
 law.008.name,FIRST STEP TWO
-law.008.description,Each Guard's first move can be 2 squares in any direction if the middle square is empty.
+law.008.description,"On its first move, each Guard may move 2 squares in any direction, not just forward, if the middle square is empty."
 law.009.name,ALTERNATING STEP
 law.009.description,Each guard must alternate between orthogonal and diagonal movement.
 law.010.name,NO SAME DIRECTION
@@ -312,7 +313,7 @@ options.fullscreen,FULL SCREEN
 options.volume,VOLUME
 options.language,LANGUAGE: ENGLISH
 help,HOW TO PLAY
-help.text,Drag a Guard onto a nearby square to move or capture. Every move grants the enemy one move. Bring the Guards to the checkered row at the top. Guards that arrive wait for the others. Captured Guards are lost for this run. The cyan border follows the mouse. The laws change at every level.
+help.text,"Drag a Guard onto a nearby square to move or capture. On each Guard's first move, you may also advance 2 squares straight forward if both squares are clear. Every move grants the enemy one move. Bring the Guards to the checkered row at the top. Guards that arrive wait for the others. Captured Guards are lost for this run. The cyan border follows the mouse. The laws change at every level."
 piece.Pawn,PAWN
 piece.Rook,ROOK
 piece.Bishop,BISHOP

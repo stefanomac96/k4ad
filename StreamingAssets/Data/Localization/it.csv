@@ -1,4 +1,4 @@
-﻿Key,Text
+Key,Text
 game.title,KING 4 A DAY
 menu.new,Nuova partita
 menu.options,Opzioni
@@ -35,11 +35,12 @@ guards,GUARDIE
 player,Giocatore
 computer,Computer
 royal.guards,Guardie
+hud.pause.hover,Premi per mettere in pausa!
 law,LEGGE
 choose.law,SCEGLI LA LEGGE IN VIGORE
 law.subtitle,In questo livello è valida la seguente legge:
 law.000.name,La partenza!
-law.000.description,Nessuna regola speciale. Le Guardie si muovono normalmente di una casella in qualsiasi direzione.
+law.000.description,Nessuna regola speciale. Le Guardie si muovono normalmente di una casella in qualsiasi direzione; alla loro prima mossa possono avanzare di 2 caselle se il percorso è libero.
 law.001.name,NESSUNA RITIRATA
 law.001.description,Le guardie non possono muoversi verso il basso.
 law.002.name,GIURAMENTO ORTOGONALE
@@ -55,7 +56,7 @@ law.006.description,"Ogni Guardia, una volta per livello, può muoversi di 2 cas
 law.007.name,DIAGONALE LUNGA
 law.007.description,"Ogni Guardia, una volta per livello, può muoversi di 2 caselle in diagonale, se la casella intermedia e quella di arrivo sono libere."
 law.008.name,PRIMO PASSO DOPPIO
-law.008.description,"La prima mossa di ogni Guardia può essere di 2 caselle in qualsiasi direzione, se la casella intermedia è libera."
+law.008.description,"Alla prima mossa, ogni Guardia può muoversi di 2 caselle in qualsiasi direzione, non solo in avanti, se la casella intermedia è libera."
 law.009.name,PASSO ALTERNATO
 law.009.description,Ogni guardia deve alternare movimento ortogonale e diagonale.
 law.010.name,DIREZIONE NUOVA
@@ -310,7 +311,7 @@ options.fullscreen,SCHERMO INTERO
 options.volume,VOLUME
 options.language,LINGUA: ITALIANO
 help,COME SI GIOCA
-help.text,Trascina una Guardia su una casella vicina per muoverla o catturare. Ogni mossa concede una mossa al nemico. Porta le Guardie alla riga a scacchi in alto. Quelle arrivate aspettano le altre. Le catturate sono perdute per questa partita. Il bordo ciano segue il mouse. Le leggi cambiano a ogni livello.
+help.text,"Trascina una Guardia su una casella vicina per muoverla o catturare. Alla prima mossa di ogni Guardia puoi anche avanzare di 2 caselle dritte in avanti, se entrambe sono libere. Ogni mossa concede una mossa al nemico. Porta le Guardie alla riga a scacchi in alto. Quelle arrivate aspettano le altre. Le catturate sono perdute per questa partita. Il bordo ciano segue il mouse. Le leggi cambiano a ogni livello."
 piece.Pawn,PEDONE
 piece.Rook,TORRE
 piece.Bishop,ALFIERE

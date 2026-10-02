@@ -8,7 +8,8 @@ Mash D
 
 ------
 
-MUSICA ED EFFETTI SONORI:
+MUSICA ED
+EFFETTI SONORI:
 Da Pixabay.com
 
 "New Bark Morning Light"
@@ -40,16 +41,33 @@ di rurr
 "DejaVu Sans Mono"
 di Bitstream
 
+"Retro Gaming"
+di Daymarius
+
 ------
 
 ASSETS AGGIUNTIVI:
-Vettori da Freepik.com e
-pixellati con ResizePixel.com
+Vettori da Freepik.com e quindi pixellati con ResizePixel.com
 
-Cursori del mouse da Itch.io
+Cursori del mouse
+da Itch.io
 
 ------
 
-Copyright (c) 2026
+L'IA è stata utilizzata per contribuire all'ottimizzazione del codice e per aiutare nelle traduzioni.
+
+------
+
+RINGRAZIAMENTI SPECIALI:
+Mauro Ammann
+Niccolò Zuccolo
+Michel Palucci
+Alessandro Bianchi
+Andrea Spinelli
+Filippo Zanoli
+
+------
+
+Copyright © 2026
 Tutti i diritti riservati
 Stelex Software

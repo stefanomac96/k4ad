@@ -40,16 +40,33 @@ by rurr
 "DejaVu Sans Mono"
 by Bitstream
 
+"Retro Gaming"
+by Daymarius
+
 ------
 
 ADDITIONAL ASSETS:
-Vectors from Freepik.com, then
-pixelated using ResizePixel.com
+Vectors from Freepik.com, then pixelated using ResizePixel.com
 
-Mouse cursors from Itch.io
+Mouse cursors
+from Itch.io
 
 ------
 
-Copyright (c) 2026
+AI was used to help optimize the code and assist with translations.
+
+------
+
+SPECIAL THANKS:
+Mauro Ammann
+Niccolò Zuccolo
+Michel Palucci
+Alessandro Bianchi
+Andrea Spinelli
+Filippo Zanoli
+
+------
+
+Copyright © 2026
 All rights reserved
 Stelex Software

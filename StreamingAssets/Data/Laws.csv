@@ -6,7 +6,7 @@
 5,LAW #005,RE LATERALE,Guard movement,Le guardie possono muoversi solo lateralmente o in diagonale laterale; niente avanti/dietro dritto.,3,17,3-17,Misto,guard.directionMask=Side6
 6,LAW #006,PASSO LUNGO,Guard movement,Una volta per guardia nel livello è consentito un movimento ortogonale di 2 caselle libere.,2,16,2-16,Bonus,guard.longOrthogonalCharges=1
 7,LAW #007,DIAGONALE LUNGA,Guard movement,Una volta per guardia nel livello è consentito un movimento diagonale di 2 caselle libere.,3,17,3-17,Bonus,guard.longDiagonalCharges=1
-8,LAW #008,PRIMO PASSO DOPPIO,Guard movement,Il primo movimento di ogni guardia può essere di 2 caselle nella stessa direzione se il percorso è libero.,2,16,2-16,Bonus,guard.firstMoveRange=2
+8,LAW #008,PRIMO PASSO DOPPIO,Guard movement,"Alla prima mossa, ogni Guardia può muoversi di 2 caselle in qualsiasi direzione, non solo in avanti, se la casella intermedia è libera.",2,16,2-16,Bonus,guard.firstMoveRange=2
 9,LAW #009,PASSO ALTERNATO,Guard movement,Ogni guardia deve alternare movimento ortogonale e diagonale.,3,17,3-17,Misto,guard.alternateAxis=true
 10,LAW #010,DIREZIONE NUOVA,Guard movement,Una guardia non può ripetere la stessa direzione del suo movimento precedente.,4,18,4-18,Malus,guard.blockRepeatDirection=true
 11,LAW #011,UN VENTO VIETATO,Guard movement,Una delle 8 direzioni viene estratta a caso e resta vietata per tutto il livello.,2,16,2-16,Misto,guard.randomBlockedDirection=1
