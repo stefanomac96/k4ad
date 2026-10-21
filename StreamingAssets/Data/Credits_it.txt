@@ -54,7 +54,9 @@ da Itch.io
 
 ------
 
-L'IA è stata utilizzata per contribuire all'ottimizzazione del codice e per aiutare nelle traduzioni.
+DICHIARAZIONE SULL'UTILIZZO DELL'IA
+
+Durante lo sviluppo sono stati utilizzati strumenti assistiti dall'IA come supporto alla programmazione, per imparare, verificare il codice, correggere errori e migliorarlo nel tempo. Nessuna grafica, musica, dialogo, elemento di game design o contenuto di gioco è stato generato dall'IA. Tutti i contenuti e le decisioni creative sono opera degli sviluppatori e degli artisti accreditati.
 
 ------
 
@@ -65,6 +67,10 @@ Michel Palucci
 Alessandro Bianchi
 Andrea Spinelli
 Filippo Zanoli
+
+------
+
+QUESTO GIOCO È FREEWARE!
 
 ------
 

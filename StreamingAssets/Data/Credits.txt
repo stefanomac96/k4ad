@@ -53,7 +53,9 @@ from Itch.io
 
 ------
 
-AI was used to help optimize the code and assist with translations.
+AI ASSISTANCE DISCLOSURE:
+
+The game was developed by a human developer with the support of AI-assisted programming tools, which were used for learning, code review, debugging, optimization, refactoring, and cleanup. No AI-generated artwork, music, dialogue, game design, or gameplay content is included in the game. All creative decisions and game content were created by the developers and/or artists credited where applicable.
 
 ------
 
@@ -64,6 +66,10 @@ Michel Palucci
 Alessandro Bianchi
 Andrea Spinelli
 Filippo Zanoli
+
+------
+
+THIS DIGITAL GAME IS FREEWARE!
 
 ------
 
