@@ -56,7 +56,7 @@ da Itch.io
 
 DICHIARAZIONE SULL'UTILIZZO DELL'IA
 
-Durante lo sviluppo sono stati utilizzati strumenti assistiti dall'IA come supporto alla programmazione, per imparare, verificare il codice, correggere errori e migliorarlo nel tempo. Nessuna grafica, musica, dialogo, elemento di game design o contenuto di gioco è stato generato dall'IA. Tutti i contenuti e le decisioni creative sono opera degli sviluppatori e degli artisti accreditati.
+Il gioco è stato creato da un essere umano. Durante lo sviluppo sono stati utilizzati strumenti assistiti dall'IA come supporto alla programmazione, per imparare, verificare il codice, correggere errori e migliorarlo nel tempo. Nessuna grafica, musica, dialogo, elemento di game design o contenuto di gioco è stato generato dall'IA. Tutti i contenuti e le decisioni creative sono opera degli sviluppatori e degli artisti accreditati.
 
 ------
 

@@ -356,7 +356,7 @@ result.defeat.body,Tutte le guardie sono state catturate.
 result.stalemate,STALLO
 result.stalemate.body,Nessuna guardia ha una mossa disponibile.
 result.stalemate.retry,Riprova
-exit.confirm,SEI SICURO DI LASCIARE IL REGNO?
+exit.confirm,SEI SICURO DI\nLASCIARE IL REGNO?
 exit.yes,"Sì, esci!"
 exit.no,"No, torna al gioco!"
 mode.endless.locked,La Modalità Infinita si sblocca solo dopo aver\nterminato con successo la Modalità Campagna!

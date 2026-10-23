@@ -358,9 +358,9 @@ result.defeat.body,All guards have been captured.
 result.stalemate,STALEMATE
 result.stalemate.body,No guard has an available move.
 result.stalemate.retry,Retry
-exit.confirm,ARE YOU SURE YOU WANT TO LEAVE THE KINGDOM?
-exit.yes,"Yes, exit!"
-exit.no,"No, back to the game!"
+exit.confirm,SHALL YOU TAKE\nYOUR LEAVE OF\nTHE KINGDOM?
+exit.yes,"Aye, let us depart!"
+exit.no,"Nay, let us remain!"
 mode.endless.locked,"Endless Mode is unlocked only after successfully completing
 Campaign Mode!"
 level.start,Start the game!
