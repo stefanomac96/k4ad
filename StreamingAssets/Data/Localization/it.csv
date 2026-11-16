@@ -8,6 +8,7 @@ menu.exit,Esci
 mode.title,Scegli il viaggio
 mode.campaign,Modalità Campagna
 mode.endless,Modalità Infinita
+mode.quick,Partita Veloce
 difficulty.title,DIFFICOLTÀ
 difficulty.beginner,Principiante
 difficulty.beginner.description,"Meno nemici, dopo ogni livello le Guardie tornano automaticamente a 4. Le LAW usate non vengono registrate nel Libro delle Leggi e gli obiettivi non vengono sbloccati."
@@ -163,8 +164,8 @@ law.060.name,MENO NEMICI
 law.060.description,Riduce del 25% il numero di nemici del livello.
 law.061.name,PIÙ NEMICI
 law.061.description,Aumenta del 25% il numero di nemici del livello.
-law.062.name,PARTENZA VUOTA
-law.062.description,Nessun nemico può essere generato nelle prime 4 righe percorribili.
+law.062.name,PARTIRE IN QUARTA
+law.062.description,"Alla sua prima mossa, ogni Guardia può avanzare dritta fino a 4 caselle, fermandosi anche prima. Non può saltare ostacoli; se il primo ostacolo è un nemico, può raggiungerne la casella e catturarlo."
 law.063.name,USCITA SORVEGLIATA
 law.063.description,Almeno un nemico viene generato nelle 3 righe precedenti il checkpoint.
 law.064.name,NEMICI AI BORDI
@@ -417,6 +418,7 @@ options.chessboardSize,Dimensioni della scacchiera
 options.chessboard.default,Grande
 options.chessboard.big,Media
 options.chessboard.veryBig,Piccola
+options.chessboard.tiny,Minuscola
 options.chessboard.random,Casuale
 options.fastCheckpoint,Checkpoint veloce
 extra.achievements,Obiettivi

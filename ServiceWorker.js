@@ -1,9 +1,9 @@
 const cacheName = "Stelex Software-KING 4 A DAY-1.0";
 const contentToCache = [
-    "Build/k4ad.loader.js",
-    "Build/k4ad.framework.js",
-    "Build/k4ad.data",
-    "Build/k4ad.wasm",
+    "Build/KING 4 A DAY.loader.js",
+    "Build/KING 4 A DAY.framework.js",
+    "Build/KING 4 A DAY.data",
+    "Build/KING 4 A DAY.wasm",
     "TemplateData/style.css"
 
 ];

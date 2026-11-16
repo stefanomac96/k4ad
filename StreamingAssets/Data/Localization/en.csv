@@ -8,6 +8,7 @@ menu.exit,Exit
 mode.title,Choose Your Journey
 mode.campaign,Campaign Mode
 mode.endless,Endless Mode
+mode.quick,Quick Game
 difficulty.title,DIFFICULTY
 difficulty.beginner,Beginner
 difficulty.beginner.description,"Fewer enemies, the Guards are automatically restored to 4 after each level. Laws used in Beginner are not recorded in the Book of Laws, and achievements cannot be unlocked."
@@ -163,8 +164,8 @@ law.060.name,FEWER ENEMIES
 law.060.description,Reduces the number of enemies in the level by 25%.
 law.061.name,MORE ENEMIES
 law.061.description,Increases the number of enemies in the level by 25%.
-law.062.name,EMPTY OPENING
-law.062.description,No enemy can be generated in the first 4 walkable rows.
+law.062.name,POWER ADVANCE
+law.062.description,"On its first move, each Guard may advance straight forward up to 4 squares, stopping earlier if desired. It cannot jump over obstacles; if the first obstacle is an enemy, it may move onto that square and capture it."
 law.063.name,GUARDED CHECKPOINT
 law.063.description,At least one enemy is generated in the 3 rows before the checkpoint.
 law.064.name,EDGE SPAWN
@@ -246,7 +247,7 @@ law.101.description,"During odd-numbered Guard moves, all enemies become invisib
 law.102.name,FORBIDDEN PREY
 law.102.description,One random enemy cannot be captured.
 law.103.name,KING'S PRICE
-law.103.description,"Each Guard's first capture causes no enemy response; from the second onward, every capture triggers one extra enemy response."
+law.103.description,"Each Guard's first capture causes no enemy response"";"" from the second onward, every capture triggers one extra enemy response."
 law.104.name,FOUR STEPS
 law.104.description,Every fourth team move may cover two orthogonal squares along a clear path.
 law.105.name,FIFTH DIAGONAL STEP
@@ -348,7 +349,7 @@ law.choose,CHOOSE THE LAW
 move.invalid,Move not allowed.
 promotion.title,CHOOSE PROMOTION
 help.title,HELP
-help.body,"Drag a guard onto a highlighted square. White moves first; after every move, the enemy responds. Reach the top row with at least one guard. In the boss battle, capture the queen."
+help.body,"Drag a guard onto a highlighted square. White moves first"";"" after every move, the enemy responds. Reach the top row with at least one guard. In the boss battle, capture the queen."
 result.victory,VICTORY
 result.victory.body,The queen has been captured.
 result.clear,LEVEL CLEARED
@@ -393,7 +394,7 @@ pause.exit.yes,"Yes, end the game!"
 pause.exit.no,"No, continue playing!"
 gameover.title,Game Over
 gameover.retry,Would you like to try again?
-endless.unlocked.notice,You unlocked Endless Mode
+endless.unlocked.notice,You unlocked\nEndless Mode
 options.language.english,English
 law.runtime.guard,Guard #{0}
 law.runtime.charges,Charges: {0}
@@ -420,6 +421,7 @@ options.chessboardSize,Chessboard size
 options.chessboard.default,Big
 options.chessboard.big,Medium
 options.chessboard.veryBig,Small
+options.chessboard.tiny,Tiny
 options.chessboard.random,Random
 options.fastCheckpoint,Fast checkpoint
 extra.achievements,Achievements
